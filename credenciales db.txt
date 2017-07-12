@@ -1,0 +1,7 @@
+DB user mensajeria
+
+user: cvmesj_root
+pass: ,97JxU2ru1Q2
+
+user: cvmesj_user
+pass: aciweb2017

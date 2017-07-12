@@ -1,0 +1,399 @@
+[01-Jul-2016 15:47:48 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 35
+[01-Jul-2016 15:47:49 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 35
+[04-Jul-2016 01:45:33 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/home.php on line 71
+[04-Jul-2016 02:02:05 Etc/GMT] PHP Fatal error:  Call to a member function get_companyInfo() on a non-object in /home/daoutqw3/public_html/DEMO/APCON/application/view/home/config_sys.php on line 28
+[04-Jul-2016 02:23:09 Etc/GMT] PHP Fatal error:  Call to a member function get_companyInfo() on a non-object in /home/daoutqw3/public_html/DEMO/APCON/application/view/home/config_sys.php on line 28
+[04-Jul-2016 02:29:56 Etc/GMT] PHP Fatal error:  Call to a member function get_companyInfo() on a non-object in /home/daoutqw3/public_html/DEMO/APCON/application/view/home/config_sys.php on line 28
+[04-Jul-2016 13:17:55 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_sales_conf_Info() in /home/daoutqw3/public_html/DEMO/APCON/application/view/home/config_sys.php on line 242
+[04-Jul-2016 13:20:51 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_sales_conf_Info() in /home/daoutqw3/public_html/DEMO/APCON/application/view/home/config_sys.php on line 242
+[04-Jul-2016 13:21:42 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_sales_conf_Info() in /home/daoutqw3/public_html/DEMO/APCON/application/view/home/config_sys.php on line 242
+[06-Jul-2016 05:53:52 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 36
+[06-Jul-2016 05:53:53 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 36
+[07-Jul-2016 03:41:51 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_Order_No() in /home/daoutqw3/public_html/DEMO/APCON/application/view/operaciones/ges_pro_ventas.php on line 163
+[07-Jul-2016 03:42:07 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_Order_No() in /home/daoutqw3/public_html/DEMO/APCON/application/view/operaciones/ges_pro_ventas.php on line 163
+[07-Jul-2016 03:42:53 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_Order_No() in /home/daoutqw3/public_html/DEMO/APCON/application/view/operaciones/ges_pro_ventas.php on line 163
+[08-Aug-2016 16:07:36 Etc/GMT] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'daoutqw3_root'@'localhost' to database 'daoutwq3_sage_ga' in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 36
+[08-Aug-2016 16:07:36 Etc/GMT] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'daoutqw3_root'@'localhost' to database 'daoutwq3_sage_ga' in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 36
+[08-Aug-2016 16:09:25 Etc/GMT] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'daoutqw3_root'@'localhost' to database 'daoutwq3_sage_ga' in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 36
+[08-Aug-2016 16:09:50 Etc/GMT] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'daoutqw3_root'@'localhost' to database 'daoutwq3_sage_ga' in /home/daoutqw3/public_html/DEMO/APCON/application/core/controller.php on line 36
+[10-Sep-2016 15:26:36 Etc/GMT] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 1635
+[11-Sep-2016 23:06:18 Etc/GMT] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 1635
+[11-Sep-2016 23:06:39 Etc/GMT] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 1635
+[11-Sep-2016 23:09:18 Etc/GMT] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 1635
+[15-Sep-2016 22:52:16 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/daoutqw3/public_html/DEMO/APCON/application/model/model.php on line 66
+[16-Sep-2016 20:46:46 Etc/GMT] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 635
+[16-Sep-2016 21:41:01 Etc/GMT] PHP Fatal error:  Call to undefined function Query_value() in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 680
+[16-Sep-2016 21:55:33 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 742
+[18-Sep-2016 14:44:58 Etc/GMT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 475
+[18-Sep-2016 14:45:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 475
+[18-Sep-2016 14:45:39 Etc/GMT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 475
+[09-Oct-2016 21:05:33 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[15-Oct-2016 15:07:47 Etc/GMT] PHP Parse error:  syntax error, unexpected ':' in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 1472
+[15-Oct-2016 15:16:29 Etc/GMT] PHP Parse error:  syntax error, unexpected ':' in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 1434
+[18-Oct-2016 16:30:47 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:30:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:30:53 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:30:57 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:30:58 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:31:03 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:31:19 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:31:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:31:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:31:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 16:31:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 192
+[18-Oct-2016 22:13:41 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[18-Oct-2016 22:13:45 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[18-Oct-2016 22:13:46 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[18-Oct-2016 22:13:46 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[18-Oct-2016 22:13:48 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[18-Oct-2016 22:14:19 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[18-Oct-2016 22:14:20 Etc/GMT] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 308
+[19-Oct-2016 16:19:08 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:19:27 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:19:27 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:19:31 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:19:32 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:12 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:13 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:13 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:13 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:14 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:15 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:15 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:15 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:20:15 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:33:31 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:33:32 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:33:34 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:51:29 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[19-Oct-2016 16:52:10 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/APCON/application/core/application.php on line 56
+[22-Oct-2016 17:41:24 Etc/GMT] PHP Parse error:  syntax error, unexpected ''</td>";' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/APCON/application/controller/bridge_query.php on line 846
+[02-Nov-2016 19:34:54 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 349
+[02-Nov-2016 20:16:37 Etc/GMT] PHP Parse error:  syntax error, unexpected ''"'' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 59
+[02-Nov-2016 20:17:04 Etc/GMT] PHP Parse error:  syntax error, unexpected ''";'' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 108
+[02-Nov-2016 20:17:26 Etc/GMT] PHP Parse error:  syntax error, unexpected ''";'' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 117
+[02-Nov-2016 20:17:48 Etc/GMT] PHP Parse error:  syntax error, unexpected ''"'' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 169
+[02-Nov-2016 20:18:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '|' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 117
+[02-Nov-2016 20:18:37 Etc/GMT] PHP Parse error:  syntax error, unexpected ''";'' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 175
+[02-Nov-2016 22:15:46 Etc/GMT] PHP Fatal error:  Call to a member function verify_session() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 19
+[02-Nov-2016 22:16:39 Etc/GMT] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 9
+[02-Nov-2016 23:15:08 Etc/GMT] PHP Parse error:  syntax error, unexpected '{' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 448
+[06-Nov-2016 00:54:46 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_InvXstk() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 1851
+[06-Nov-2016 00:55:43 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_InvXStk() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 1851
+[06-Nov-2016 01:00:41 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_InvXvStk() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 1851
+[13-Nov-2016 20:04:40 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/DEV/application/core/application.php on line 56
+[14-Nov-2016 00:48:52 Etc/GMT] PHP Fatal error:  Cannot redeclare Model::Get_Ref_No() in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 511
+[14-Nov-2016 01:27:57 Etc/GMT] PHP Fatal error:  Cannot access empty property in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2489
+[14-Nov-2016 02:31:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_requisiciones.php on line 93
+[14-Nov-2016 02:32:21 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_requisiciones.php on line 93
+[14-Nov-2016 02:32:24 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_requisiciones.php on line 93
+[14-Nov-2016 02:32:58 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 678
+[14-Nov-2016 03:13:13 Etc/GMT] PHP Fatal error:  Cannot redeclare ges_requisiciones::req_print() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_requisiciones.php on line 95
+[14-Nov-2016 03:14:25 Etc/GMT] PHP Fatal error:  Cannot redeclare ges_requisiciones::req_print() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_requisiciones.php on line 95
+[14-Nov-2016 03:14:28 Etc/GMT] PHP Fatal error:  Cannot redeclare ges_requisiciones::req_print() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_requisiciones.php on line 95
+[14-Nov-2016 16:16:36 Etc/GMT] PHP Fatal error:  Class 'Model' not found in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 50
+[14-Nov-2016 17:11:18 Etc/GMT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2774
+[14-Nov-2016 17:14:40 Etc/GMT] PHP Parse error:  syntax error, unexpected 'javascript' (T_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2022
+[14-Nov-2016 17:29:17 Etc/GMT] PHP Fatal error:  Call to undefined function get_req_to_report() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2712
+[14-Nov-2016 23:11:53 Etc/GMT] PHP Parse error:  syntax error, unexpected '$ORDER' (T_VARIABLE), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2777
+[14-Nov-2016 23:12:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '$ORDER' (T_VARIABLE), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2780
+[14-Nov-2016 23:12:46 Etc/GMT] PHP Parse error:  syntax error, unexpected '$ORDER' (T_VARIABLE), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2780
+[14-Nov-2016 23:56:58 Etc/GMT] PHP Fatal error:  Class 'bridge_query' not found in /home/daoutqw3/public_html/DEMO/DEV/application/core/application.php on line 40
+[15-Nov-2016 00:51:03 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_items_by_OC() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 38
+[15-Nov-2016 00:51:19 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_items_by_OC() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 38
+[15-Nov-2016 00:51:23 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_items_by_OC() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 38
+[15-Nov-2016 00:51:24 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_items_by_OC() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 38
+[15-Nov-2016 00:52:42 Etc/GMT] PHP Fatal error:  Call to undefined method Model::SESSION() in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 703
+[15-Nov-2016 00:53:40 Etc/GMT] PHP Fatal error:  Call to a member function Query() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 711
+[15-Nov-2016 23:15:25 Etc/GMT] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 721
+[15-Nov-2016 23:56:08 Etc/GMT] PHP Parse error:  syntax error, unexpected ',' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 570
+[15-Nov-2016 23:56:08 Etc/GMT] PHP Parse error:  syntax error, unexpected ',' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 570
+[15-Nov-2016 23:56:08 Etc/GMT] PHP Parse error:  syntax error, unexpected ',' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 570
+[21-Nov-2016 16:20:54 Etc/GMT] PHP Fatal error:  Call to undefined method ges_requisiciones::index() in /home/daoutqw3/public_html/DEMO/DEV/application/core/application.php on line 56
+[22-Nov-2016 00:09:57 Etc/GMT] PHP Fatal error:  Class 'PHPMailer' not found in /home/daoutqw3/public_html/DEMO/DEV/application/view/operaciones/req_mailing.php on line 288
+[22-Nov-2016 01:38:48 Etc/GMT] PHP Fatal error:  Class 'PHPMailer' not found in /home/daoutqw3/public_html/DEMO/DEV/application/view/operaciones/req_mailing.php on line 7
+[22-Nov-2016 03:47:13 Etc/GMT] PHP Fatal error:  Call to a member function isSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/view/operaciones/req_mailing.php on line 280
+[24-Nov-2016 00:35:17 Etc/GMT] PHP Parse error:  syntax error, unexpected ''"/></td>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 461
+[26-Nov-2016 16:36:27 Etc/GMT] PHP Parse error:  syntax error, unexpected ';', expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2751
+[26-Nov-2016 16:36:54 Etc/GMT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2778
+[26-Nov-2016 16:37:01 Etc/GMT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2778
+[26-Nov-2016 18:57:51 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 18:59:52 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 19:02:13 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 19:03:15 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 19:11:33 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 19:12:21 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 19:12:52 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[26-Nov-2016 19:13:31 Etc/GMT] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2921
+[29-Nov-2016 23:29:18 Etc/GMT] PHP Fatal error:  Call to undefined function Query() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2255
+[29-Nov-2016 23:32:03 Etc/GMT] PHP Fatal error:  Call to undefined function Query_value() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2255
+[13-Dec-2016 18:32:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2120
+[13-Dec-2016 18:32:20 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2120
+[13-Dec-2016 18:33:55 Etc/GMT] PHP Fatal error:  Class 'bridge_query' not found in /home/daoutqw3/public_html/DEMO/DEV/application/core/application.php on line 40
+[18-Dec-2016 00:08:24 Etc/GMT] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3089
+[18-Dec-2016 17:04:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2284
+[18-Dec-2016 17:23:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 818
+[18-Dec-2016 21:20:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_consignaciones.php on line 70
+[18-Dec-2016 21:20:53 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_consignaciones.php on line 70
+[18-Dec-2016 21:20:58 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_consignaciones.php on line 70
+[06-Jan-2017 03:59:33 Etc/GMT] PHP Parse error:  syntax error, unexpected ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2476
+[06-Jan-2017 04:00:10 Etc/GMT] PHP Parse error:  syntax error, unexpected ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2466
+[18-Jan-2017 23:42:26 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::index() in /home/daoutqw3/public_html/DEMO/DEV/application/core/application.php on line 56
+[19-Jan-2017 18:51:13 Etc/GMT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3237
+[10-Mar-2017 15:55:25 Etc/GMT] PHP Fatal error:  Call to undefined function Query_value() in /home/daoutqw3/public_html/DEMO/DEV/application/view/home/config_sys.php on line 118
+[19-Mar-2017 22:40:34 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:40:34 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:40:34 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:40:34 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:41:06 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:41:13 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:41:14 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:42:38 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:42:38 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:42:38 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:42:38 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:42:40 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:24 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:24 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:24 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:24 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:28 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:56 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:56 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:56 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:44:56 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:45:00 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:45:00 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:45:00 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[19-Mar-2017 22:45:00 Etc/GMT] PHP Parse error:  syntax error, unexpected ''JOB'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3768
+[20-Mar-2017 21:44:31 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2786
+[20-Mar-2017 22:36:17 Etc/GMT] PHP Parse error:  syntax error, unexpected '$table' (T_VARIABLE) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 2765
+[20-Mar-2017 23:15:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '?' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 4111
+[21-Mar-2017 18:49:21 Etc/GMT] PHP Parse error:  syntax error, unexpected '$REF' (T_VARIABLE) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 94
+[21-Mar-2017 18:50:21 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 127
+[21-Mar-2017 18:50:23 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/daoutqw3/public_html/DEMO/DEV/application/controller/ges_compras.php on line 127
+[21-Mar-2017 19:01:19 Etc/GMT] PHP Parse error:  syntax error, unexpected ''"'' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/DEV/application/model/model.php on line 626
+[26-Mar-2017 16:09:36 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[26-Mar-2017 21:19:42 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[27-Mar-2017 00:37:17 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[27-Mar-2017 00:37:26 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[27-Mar-2017 00:37:28 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[27-Mar-2017 00:37:29 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[27-Mar-2017 00:38:15 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[27-Mar-2017 00:40:05 Etc/GMT] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'daoutqw3_root'@'localhost' (using password: YES) in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 37
+[28-Mar-2017 16:52:39 Etc/GMT] PHP Fatal error:  Call to undefined function stratotime() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3986
+[28-Mar-2017 16:56:42 Etc/GMT] PHP Fatal error:  Call to undefined function stratotime() in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 3986
+[28-Mar-2017 17:27:39 Etc/GMT] PHP Fatal error:  Class 'Model' not found in /home/daoutqw3/public_html/DEMO/DEV/application/core/controller.php on line 50
+[01-Apr-2017 17:19:40 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/daoutqw3/public_html/DEMO/DEV/application/controller/bridge_query.php on line 1567
+[11-Apr-2017 23:48:56 Etc/GMT] PHP Parse error:  syntax error, unexpected '/', expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 494
+[16-Apr-2017 21:24:15 Etc/GMT] PHP Fatal error:  Call to undefined method bridge_query::Query_value() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 206
+[19-Apr-2017 21:16:08 Etc/GMT] PHP Fatal error:  Call to undefined method Model::Get_sales_conf_Info() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/view/home/config_sys.php on line 287
+[19-Apr-2017 23:23:09 Etc/GMT] PHP Fatal error:  Class 'bridge_query' not found in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/application.php on line 40
+[20-Apr-2017 17:00:49 Etc/GMT] PHP Fatal error:  Cannot redeclare bridge_query::get_status_list_item() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 462
+[20-Apr-2017 23:26:41 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_msg_info() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/view/operaciones/msg_mailing.php on line 4
+[20-Apr-2017 23:34:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 1083
+[20-Apr-2017 23:35:51 Etc/GMT] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 1083
+[20-Apr-2017 23:36:17 Etc/GMT] PHP Fatal error:  Call to a member function Query() on a non-object in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 992
+[07-May-2017 14:41:55 Etc/GMT] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 13
+[07-May-2017 14:42:03 Etc/GMT] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 13
+[07-May-2017 14:43:51 Etc/GMT] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 35
+[07-May-2017 14:43:51 Etc/GMT] PHP Notice:  Use of undefined constant DB_USER - assumed 'DB_USER' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 36
+[07-May-2017 14:43:51 Etc/GMT] PHP Notice:  Use of undefined constant DB_PASS - assumed 'DB_PASS' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 37
+[07-May-2017 14:43:51 Etc/GMT] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 38
+[07-May-2017 14:43:51 Etc/GMT] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 39
+[07-May-2017 14:43:51 Etc/GMT] PHP Notice:  Use of undefined constant APP - assumed 'APP' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 49
+[07-May-2017 14:43:51 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'APPmodel/model.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/core/controller.php on line 49
+[07-May-2017 15:38:14 Etc/GMT] PHP Fatal error:  Using $this when not in object context in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 39
+[07-May-2017 16:05:11 Etc/GMT] PHP Fatal error:  Using $this when not in object context in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/view/_templates/header.php on line 76
+[07-May-2017 16:05:21 Etc/GMT] PHP Fatal error:  Using $this when not in object context in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/view/_templates/header.php on line 76
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 7
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 11
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 12
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 13
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 14
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 15
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 16
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 17
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 18
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 19
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 20
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 23
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 24
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 28
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 34
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 38
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 39
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 44
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 45
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 46
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 47
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 48
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 49
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 50
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 51
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 52
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 53
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 54
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 55
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 56
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 57
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 58
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 62
+[07-May-2017 16:11:46 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 65
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 7
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 11
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 12
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 13
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 14
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 15
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 16
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 17
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 18
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 19
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 20
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 23
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 24
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 28
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 34
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 38
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 39
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 44
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 45
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 46
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 47
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 48
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 49
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 50
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 51
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 52
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 53
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 54
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 55
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 56
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 57
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 58
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 62
+[07-May-2017 16:16:40 Etc/GMT] PHP Notice:  Use of undefined constant URL - assumed 'URL' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 65
+[07-May-2017 21:28:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '', por favor haga click en el ' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 156
+[07-May-2017 21:33:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '', por favor haga click en el ' (T_CONSTANT_ENCAPSED_STRING) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 157
+[07-May-2017 21:34:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '$mail' (T_VARIABLE) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 795
+[07-May-2017 21:43:00 Etc/GMT] PHP Fatal error:  Call to a member function send_mail() on a non-object in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/registration.php on line 164
+[07-May-2017 23:34:01 Etc/GMT] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 828
+[07-May-2017 23:35:51 Etc/GMT] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 828
+[09-May-2017 15:32:42 Etc/GMT] PHP Parse error:  syntax error, unexpected '$EXIST_ID' (T_VARIABLE) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 302
+[10-May-2017 00:33:30 Etc/GMT] PHP Fatal error:  Call to a member function Query() on a non-object in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 1111
+[11-May-2017 00:00:33 Etc/GMT] PHP Fatal error:  Call to undefined method Model::encriptar() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/view/login/forgot_pass.php on line 20
+[17-May-2017 22:19:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'self' (T_STRING), expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 454
+[17-May-2017 23:37:11 Etc/GMT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 778
+[17-May-2017 23:37:41 Etc/GMT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 778
+[20-May-2017 17:56:49 Etc/GMT] PHP Fatal error:  Call to undefined function setTimeout() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 727
+[21-May-2017 23:03:53 Etc/GMT] PHP Fatal error:  Call to a member function Query() on a non-object in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 431
+[21-May-2017 23:17:54 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_status_gen() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 434
+[21-May-2017 23:18:45 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_status_gen() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 434
+[21-May-2017 23:21:20 Etc/GMT] PHP Fatal error:  Call to undefined method Model::SESSION() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/model/model.php on line 448
+[23-May-2017 17:47:11 Etc/GMT] PHP Fatal error:  Call to undefined method Model::get_report() in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/view/home/dashboard.php on line 155
+[23-May-2017 18:44:19 Etc/GMT] PHP Parse error:  syntax error, unexpected 'numb' (T_STRING) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 234
+[31-May-2017 22:48:54 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 839
+[01-Jun-2017 15:29:14 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 194
+[04-Jun-2017 20:12:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '{' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/application/controller/bridge_query.php on line 867
+[04-Jun-2017 21:19:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 38
+[04-Jun-2017 21:58:52 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 38
+[04-Jun-2017 23:20:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 38
+[04-Jun-2017 23:21:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 38
+[04-Jun-2017 23:21:50 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 4
+[04-Jun-2017 23:21:50 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 4
+[04-Jun-2017 23:21:50 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[04-Jun-2017 23:21:50 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[04-Jun-2017 23:22:20 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 4
+[04-Jun-2017 23:22:20 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 4
+[04-Jun-2017 23:22:20 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[04-Jun-2017 23:22:20 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[04-Jun-2017 23:22:20 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:23:06 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 4
+[04-Jun-2017 23:23:06 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 4
+[04-Jun-2017 23:23:06 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[04-Jun-2017 23:23:06 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[04-Jun-2017 23:23:06 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:24:20 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:26:35 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:29:12 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:30:22 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:46:06 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:51:54 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:51:55 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:51:56 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:54:14 Etc/GMT] PHP Notice:  Undefined index: RevName in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:58:08 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[04-Jun-2017 23:59:11 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:00:23 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:08:46 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:08:46 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[05-Jun-2017 00:08:46 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[05-Jun-2017 00:09:40 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:10:15 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:23:25 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:24:26 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:27:20 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 18
+[05-Jun-2017 00:50:03 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[05-Jun-2017 00:50:03 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[05-Jun-2017 00:50:03 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[05-Jun-2017 00:50:03 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[05-Jun-2017 00:50:03 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[05-Jun-2017 17:55:11 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[05-Jun-2017 17:55:11 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[05-Jun-2017 17:55:11 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[05-Jun-2017 17:55:11 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[05-Jun-2017 17:55:11 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[05-Jun-2017 17:55:16 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[05-Jun-2017 17:55:16 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[05-Jun-2017 17:55:16 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[05-Jun-2017 17:55:16 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[05-Jun-2017 17:55:16 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[15-Jun-2017 15:23:21 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:23:21 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:23:21 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[15-Jun-2017 15:23:21 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[15-Jun-2017 15:23:21 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[15-Jun-2017 15:26:50 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:26:50 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:26:50 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[15-Jun-2017 15:26:50 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[15-Jun-2017 15:26:50 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[15-Jun-2017 15:30:22 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:30:22 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:30:22 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[15-Jun-2017 15:30:22 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[15-Jun-2017 15:31:26 Etc/GMT] PHP Notice:  Undefined index: id in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:31:26 Etc/GMT] PHP Notice:  Undefined index: item in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 6
+[15-Jun-2017 15:31:26 Etc/GMT] PHP Notice:  Undefined index: sing in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 8
+[15-Jun-2017 15:31:26 Etc/GMT] PHP Notice:  Undefined offset: 1 in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 10
+[16-Jun-2017 17:13:16 Etc/GMT] PHP Notice:  Undefined index: imageFile in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:13:16 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:14:21 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:14:21 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:14:21 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:14:21 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:14:41 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:14:41 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:20:06 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:20:06 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:20:06 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 20
+[16-Jun-2017 17:21:20 Etc/GMT] PHP Warning:  Illegal string offset 'name' in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:21:20 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:41:50 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:44:31 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 17
+[16-Jun-2017 17:49:32 Etc/GMT] PHP Warning:  rename(img/Del_item_img/Imagen1.png,img/Del_item_img/5-1.jpg): No such file or directory in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 38
+[16-Jun-2017 17:54:01 Etc/GMT] PHP Warning:  rename(img/Del_item_img/Imagen1.png,img/Del_item_img/5-1.jpg): No such file or directory in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 38
+[16-Jun-2017 17:55:36 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 23
+[16-Jun-2017 17:55:36 Etc/GMT] PHP Notice:  Undefined index: image in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 36
+[16-Jun-2017 18:07:49 Etc/GMT] PHP Warning:  rename(img/Del_item_img/Imagen1.png,img/Del_item_img/prueba.jpg): No such file or directory in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 66
+[16-Jun-2017 18:10:05 Etc/GMT] PHP Warning:  rename(img/Del_item_img/Imagen1.png,img/Del_item_img/prueba.jpg): No such file or directory in /home/daoutqw3/public_html/DEMO/CV_MSGEXPRESS/public/save_signature.php on line 67
+[12-Jul-2017 03:31:20 UTC] PHP Notice:  Undefined index: image in /home/daoutel/public_html/cvmensajeria/public/save_signature.php on line 23
+[12-Jul-2017 03:31:20 UTC] PHP Notice:  Undefined index: image in /home/daoutel/public_html/cvmensajeria/public/save_signature.php on line 27
