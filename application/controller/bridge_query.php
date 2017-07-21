@@ -634,7 +634,7 @@ public function get_msg_info($id){
     if($USER_ID != $this->model->active_user_id){
      
       
-      die("<script>MSG_ERROR('No se encontro el numero de solicitud a su nombre', 0);</script>");
+      die("<script>MSG_ERROR('No se encontro el No. de solicitud', 0);</script>");
 
 
     }
