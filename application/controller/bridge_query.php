@@ -424,6 +424,7 @@ public function get_msg_info($id){
 
         info:      false });
 
+
    var table = $("#table_mov").dataTable({
 
          rowReorder: {
@@ -458,7 +459,7 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  class="display nowrap table table-striped table-bordered table-responsive" cellspacing="0"  ><tbody>';
+  <table  class="table table-striped table-bordered table-responsive" cellspacing="0"  ><tbody>';
 
   foreach ($msg_detail as $datos) {
 
