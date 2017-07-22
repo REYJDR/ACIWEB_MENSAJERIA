@@ -637,7 +637,7 @@ public function get_msg_info($id){
 
         if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
 
-         echo '<td>';
+        echo '<td>';
 
           if($STATUS_GEN!=5){
 
@@ -665,26 +665,25 @@ public function get_msg_info($id){
 
         }
 
-        echo   '</tr>';  
+         echo '</tr>';  
 
         }
 
-echo '</tbody></table>
+echo '</tbody></table></fieldset>';
 
-        </fieldset><div class=" separador col-lg-12"></div>';
 
-echo '<div class=" separador col-lg-12"></div>
+echo '<div class="separador col-lg-12"></div>
+
+<div class="col-lg-12">
 
 <div style="float:right;" class="col-lg-2">
+  <a href="'.URL.'index.php?url=ges_mensajeria/msg_print/'.$id.'"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
-<a href="'.URL.'index.php?url=ges_mensajeria/msg_print/'.$id.'"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
+     <img  class="icon" src="img/Printer.png" />
 
-   <img  class="icon" src="img/Printer.png" />
+    <span>Imprimir</span>
 
-  <span>Imprimir</span>
-
-</a>
-
+  </a>
 </div>';
 
 if($STATUS_GEN!=5){
@@ -698,7 +697,6 @@ if($STATUS_GEN!=5){
        if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
     echo '<div style="float:right;" class="col-lg-2">
-
             <a title="CANCELAR SOLICITUD" data-toggle="modal" data-target="#GenModal" href="javascript:void(0)"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
               <img  class="icon" src="img/Stop.png" />
@@ -706,7 +704,6 @@ if($STATUS_GEN!=5){
               <span>CANCELAR SOLICITUD</span>
 
             </a>
-
           </div>';
 
     }
@@ -717,17 +714,15 @@ if($STATUS_GEN!=5){
 
       if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
-       echo '<div style="float:right;" class="col-lg-2">
+    echo '<div style="float:right;" class="col-lg-2">
+            <a href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'"   class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
-      <a href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'"   class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
+               <img  class="icon" src="img/Button Check.png" />
 
-         <img  class="icon" src="img/Button Check.png" />
+              <span>CONFIRMAR</span>
 
-        <span>CONFIRMAR</span>
-
-      </a>
-
-      </div>';
+            </a>
+          </div>';
 
     }
 
@@ -739,7 +734,7 @@ if($STATUS_GEN!=5){
 
 //LOG DE PROCESO
 
-ECHO '<div class=" separador col-lg-12"></div>
+ECHO '</div><div class=" separador col-lg-12"></div>
 
   <div class="col-lg-12">
 
