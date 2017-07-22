@@ -971,7 +971,9 @@ $MODAL = '
       <fieldset>
       <div class="col-lg-8">
        <legend>Repartidor</legend>
-        <select class="select col-lg-12 " id="msg_sol_asing" name="msg_sol_asing">
+            
+        <select id="msg_sol_asing" name="msg_sol_asing" class="select col-lg-12 " required="" tabindex="-1" title="">
+        <option selected="" disabled=""></option>
           '.$listRepar.'
          </select>
       </div>
