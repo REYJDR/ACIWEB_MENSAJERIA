@@ -15,7 +15,6 @@
     #footer {  display: none;  } 
     #print_button {  display: none; }
     #page {  display: none; }
-
     .print_button {  display: none;   }
 
 
@@ -73,6 +72,10 @@ table {
 
 }
 
+table.dataTable {
+border-collapse: collapse;
+width: 100%;
+}
 
 
 .wrapper {
