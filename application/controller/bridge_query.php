@@ -159,6 +159,7 @@ table.yadcf(
   html_data_type: "text" },
 
 {column_number : 2},
+{column_number : 3},
 
 {column_number : 4}
 
