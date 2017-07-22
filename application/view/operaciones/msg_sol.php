@@ -11,7 +11,7 @@ $(window).load(function(){
       
 
       bSort:      false,
-      responsive: true,
+      responsive: false,
       searching: false,
       paging:    false,
       info:      false,
