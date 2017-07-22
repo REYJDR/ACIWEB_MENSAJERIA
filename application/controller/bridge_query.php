@@ -443,11 +443,11 @@ public function get_msg_info($id){
 
   <fieldset>
 
-
+  <div class="col-lg-6" >
 
   <legend>Detalle de envio</legend>
 
-  <table   class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
+  <table  width="100%" class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
 
   foreach ($msg_detail as $datos) {
 
@@ -530,7 +530,7 @@ public function get_msg_info($id){
 
   echo '<fieldset>
 
-        <table id="table_mov" class="table  table-striped table-bordered " cellspacing="0"  >
+        <table id="table_mov" width="100%" class="table  table-striped table-bordered " cellspacing="0"  >
 
         <thead>
 
@@ -746,7 +746,7 @@ ECHO '<div class=" separador col-lg-12"></div>
 
     <legend>Registro de cambios</legend>
 
-        <table id="table_log" class="table  table-striped table-bordered " cellspacing="0" >
+        <table id="table_log" width="100%" class="table  table-striped table-bordered " cellspacing="0" >
 
           <thead> 
 
