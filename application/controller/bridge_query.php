@@ -674,6 +674,8 @@ echo '</tbody></table></fieldset>';
 
 echo '<div class="separador col-lg-12"></div>
 
+<fieldset>
+
 <div class="col-lg-12">
 
 <div style="float:right;" class="col-lg-2">
@@ -734,7 +736,9 @@ if($STATUS_GEN!=5){
 
 //LOG DE PROCESO
 
-ECHO '</div><div class=" separador col-lg-12"></div>
+ECHO '</div></fieldset>
+
+<div class=" separador col-lg-12"></div>
 
   <div class="col-lg-12">
 
