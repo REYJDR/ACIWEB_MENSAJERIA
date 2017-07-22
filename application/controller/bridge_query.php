@@ -969,10 +969,12 @@ $MODAL = '
 
       <!--ini Modal  body--> 
       <fieldset>
+      <div class="col-lg-8">
        <legend>Repartidor</legend>
         <select class="select col-lg-12 select2-offscreen" id="msg_sol_asing" name="msg_sol_asing">
           '.$listRepar.'
          </select>
+      </div>
       </fieldset> 
       
        
