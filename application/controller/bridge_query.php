@@ -182,6 +182,8 @@ table.yadcf(
 
         <th width="10%">Solicitante</th>
 
+        <th width="10%">Rep. Asignado</th>
+
         <th width="40%">Observaciones</th>
 
         <th width="5%" >Estatus</th>  
@@ -381,6 +383,8 @@ $STATUS_GEN = $this->model->get_status_gen($VALUE->{'NO_SOL'});
               <td class="numb">'.$VALUE->{'DATE'}.'</td>
 
               <td>'.$this->model->Get_User_Name($VALUE->{'USER'}).'</td>
+
+              <td>'.$this->model->Get_User_Name($VALUE->{'REP_ASIG'}).'</td>
 
               <td>'.$VALUE->{'ORI_NOTA'}.'</td>
 
