@@ -971,7 +971,6 @@ $MODAL = '
       <fieldset>
        <legend>Repartidor</legend>
         <select class="select col-lg-12 select2-offscreen" id="msg_sol_asing" name="msg_sol_asing">
-         <option selected disabled></option>
           '.$listRepar.'
          </select>
       </fieldset> 
