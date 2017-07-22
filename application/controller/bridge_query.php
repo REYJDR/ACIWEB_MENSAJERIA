@@ -1,106 +1,42 @@
 <?php
 
-
-
-
-
-
-
 class bridge_query extends Controller
 
 {
 
-
-
-
-
-
-
 public function SESSION(){
-
-
 
   $this->model->verify_session();
 
-
-
 }
-
-
-
-
-
-
-
-
 
 public function erase_account($id){
 
-
-
 $query='UPDATE SAX_USER SET onoff="0" where id="'.$id.'"';
-
-
 
 $this->model->Query($query);
 
-
-
-
-
 }
-
-
 
 public function get_Cust_info($custid){
 
-
-
 $query = 'SELECT * FROM SAX_USER WHERE id="'.$custid.'";';
-
-
 
 $res = $this->model->Query($query);
 
-
-
 echo $res[0];
 
-
-
 }
-
-
-
-
-
-
-
-
 
 public function get_sol_item_lines($id){
 
 $this->SESSION();
 
-
-
 $count = $this->model->Query_value('MSG_SOL_DETAIL','COUNT(*)', 'WHERE NO_SOL="'.$id.'"');
-
-
 
 echo $count;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 //*****************************************************************
 
@@ -108,55 +44,29 @@ echo $count;
 
 public function get_report($type,$sort,$limit,$date1,$date2){
 
-
-
 $this->SESSION();
-
-
 
 switch ($type) {
 
-
-
 //CASE 1
 
-
-
 case "MgsSol":
-
-
 
 $table = '';
 
 $clause='';
 
-
-
-
-
 if ($this->model->active_user_role == 'user' ){
 
-
-
-
-
 $clause .= 'WHERE MSG_SOL_HEADER.USER ="'.$this->model->active_user_id.'"';
-
-
 
     if($date1!=''){
 
        if($date2!=''){
 
-
-
-          
-
           $clause.= ' and DATE >= "'.$date1.'%" and DATE <= "'.$date2.'%" ORDER BY NO_SOL '.$sort.' limit '.$limit.';';           
 
         }
-
-
 
        if($date2==''){ 
 
@@ -166,31 +76,15 @@ $clause .= 'WHERE MSG_SOL_HEADER.USER ="'.$this->model->active_user_id.'"';
 
     }elseif ($date1 == '' && $date2 == '') {
 
-      
-
       $clause.='ORDER BY NO_SOL '.$sort.' limit '.$limit.' ;';
-
-
 
     }
 
-
-
 }else{
-
-
-
-
-
-    
 
     if($date1!=''){
 
-
-
        if($date2!=''){
-
-
 
           //CORREGIR LOS NOMBRE DE LOS CAMPOS CON LA DB
 
@@ -198,39 +92,19 @@ $clause .= 'WHERE MSG_SOL_HEADER.USER ="'.$this->model->active_user_id.'"';
 
         }
 
-
-
        if($date2==''){ 
 
          $clause.= ' WHERE  DATE like "'.$date1.'%" ORDER BY NO_SOL '.$sort.' limit '.$limit.';';
 
        }
 
-
-
-
-
     }elseif ($date1 == '' && $date2 == '') {
-
-
 
       $clause.='ORDER BY NO_SOL '.$sort.' limit '.$limit.' ;';
 
-
-
     }
 
-
-
 }
-
-
-
-
-
-
-
-
 
  $table.= '<script type="text/javascript">
 
@@ -238,13 +112,9 @@ $clause .= 'WHERE MSG_SOL_HEADER.USER ="'.$this->model->active_user_id.'"';
 
   {
 
-
-
 table = $("#MsgSol").dataTable({
 
       responsive: false,
-
-  
 
       bSort: false,
 
@@ -253,8 +123,6 @@ table = $("#MsgSol").dataTable({
       select:false
 
     });
-
-
 
 table.yadcf(
 
@@ -300,57 +168,25 @@ table.yadcf(
 
     <tbody>';
 
-
-
 $table.= $this->get_msg_sol_br($clause);
-
-
-
-
-
-
 
 $table.= '</tbody></table>';
 
-
-
 break;
 
-
-
 }
-
-
-
-
-
-
 
 //IMPRIME LA TABLA DEL REPORTE SELECCIONADO
 
 echo $table; 
 
-
-
-
-
-
-
-
-
-
-
 }
-
-
 
 //MENSAJERIA//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   //INI OBTIENE CONSECUTIVO DE LA SOLICITUD
 
   public function get_sol_no(){
-
-
 
     $SOL_NO = $this->model->Query_value(
 
@@ -360,33 +196,19 @@ echo $table;
 
                        'ORDER BY NO_SOL DESC LIMIT 1');
 
-
-
     if(!$SOL_NO) { $SOL_NO = 0;}
-
-
 
     $SOL_NO = number_format((int)$SOL_NO+1);
 
     $SOL_NO = str_pad($SOL_NO, 9 ,"0",STR_PAD_LEFT);
 
-
-
-
-
     if($SOL_NO< '1'){
-
-
 
         $SOL_NO=0;
 
         $SOL_NO = str_pad($SOL_NO, 9 ,"0",STR_PAD_LEFT);
 
-
-
     }
-
-
 
    return $SOL_NO; 
 
@@ -394,23 +216,13 @@ echo $table;
 
   //FIN OBTIENE CONSECUTIVO DE LA SOLICITUD
 
-
-
-
-
   //INI INSERTA CABECERA DEL DOCUMENTO DE SOLICITUD
 
   public function set_sol_header($DIR_ORI,$NAME,$TELF,$MAIL,$DATE,$NOTA,$NOREG){
 
-
-
     $this->SESSION();
 
-
-
     $SOLC_NO = $this->get_sol_no();
-
-
 
     $value_to_set  = array( 
 
@@ -434,11 +246,7 @@ echo $table;
 
       );
 
-
-
     $res = $this->model->insert('MSG_SOL_HEADER',$value_to_set);
-
-    
 
 echo $SOLC_NO;
 
@@ -446,35 +254,19 @@ echo $SOLC_NO;
 
 //FIN INSERTA CABECERA DEL DOCUMENTO DE SOLICITUD
 
-
-
-
-
 //INI INSERTA DETALLE DEL DOCUMENTO DE SOLICITUD
 
 public function set_sol_items($SOLC_NO){
 
 $this->SESSION();
 
-
-
 $data = json_decode($_GET['Data']);
-
-
-
-
 
 foreach ($data as $value) {
 
-
-
   if($value){
 
-
-
        list($null,$ITEMID,$ITEMDESC,$DESTEMPRE,$DESTENVIO,$DESTNAME,$DESTTELF,$NOTA ) = explode('@', $value );
-
-         
 
        $value_to_set  = array( 
 
@@ -496,11 +288,7 @@ foreach ($data as $value) {
 
                 );
 
-   
-
       $res = $this->model->insert('MSG_SOL_DETAIL',$value_to_set);
-
-
 
       }
 
@@ -508,43 +296,25 @@ foreach ($data as $value) {
 
      echo '1';
 
-
-
 } 
 
 //FIN INSERTA DETALLE DEL DOCUMENTO DE SOLICITUD
-
-
 
 //INI INFO CORTA DE  SOLICITUD
 
 public function get_msg_sol_br($clause){
 
-
-
 $TR='';
-
-
 
 $SQL = 'SELECT * FROM MSG_SOL_HEADER '.$clause;
 
-
-
 $BR = $this->model->Query($SQL);
-
-
 
 foreach ($BR as $VALUE){
 
-
-
 $VALUE = json_decode($VALUE);
 
-
-
 $STATUS_GEN = $this->model->get_status_gen($VALUE->{'NO_SOL'});
-
-
 
    switch ($STATUS_GEN) {
 
@@ -578,11 +348,7 @@ $STATUS_GEN = $this->model->get_status_gen($VALUE->{'NO_SOL'});
 
       break; 
 
-
-
   }
-
-  
 
      $TR .= '<tr>
 
@@ -598,27 +364,13 @@ $STATUS_GEN = $this->model->get_status_gen($VALUE->{'NO_SOL'});
 
               </tr>';
 
-
-
-
-
-
-
 }
-
-
 
 return $TR;
 
-
-
 }
 
-
-
 //FIN INFO CORTA DE  SOLICITUD
-
-
 
 //INI BUSCAR DETALLE DEL DOCUMENTO DE SOLICITUD
 
@@ -628,96 +380,67 @@ public function get_msg_info($id){
 
   if($this->model->active_user_role == 'user'){
 
-
     $USER_ID = $this->model->Query_value('MSG_SOL_HEADER','USER','WHERE MSG_SOL_HEADER.NO_SOL="'.$id.'"');
 
     if($USER_ID != $this->model->active_user_id){
      
-      
       die("<script>MSG_ERROR('No se encontro el No. de solicitud', 0);</script>");
-
 
     }
 
-
   }
 
- 
   //IF EXSIST
 
   $EXIST_ID = $this->model->Query_value('MSG_SOL_HEADER','NO_SOL','WHERE MSG_SOL_HEADER.NO_SOL="'.$id.'"');
 
-
-
   if($EXIST_ID!=''){
-
-
-
-
-
-
 
   $msg_detail = $this->model->Query('SELECT * FROM  MSG_SOL_HEADER WHERE MSG_SOL_HEADER.NO_SOL="'.$id.'";');
 
-
-
-
-
   echo '<script>
-
-
 
   var table = $("#table_info").dataTable({
 
-
-
          rowReorder: {
 
               selector: "td:nth-child(2)"
 
           },
 
-
-
         bSort: false,
 
-        select:true,
+        select:false,
 
         scrollY: "800px",
 
         scrollCollapse: true,
 
-        responsive: true,
+        responsive: false,
 
         searching: false,
 
         paging:    false,
 
         info:      false });
-
-   
 
    var table = $("#table_mov").dataTable({
 
-
-
          rowReorder: {
 
               selector: "td:nth-child(2)"
 
           },
 
-
-
         bSort: false,
 
-        select:true,
+        select:false,
 
         scrollY: "800px",
 
         scrollCollapse: true,
 
-        responsive: true,
+        responsive: false,
 
         searching: false,
 
@@ -725,11 +448,7 @@ public function get_msg_info($id){
 
         info:      false });
 
-
-
   </script>';
-
-
 
   echo '<br/><br/>
 
@@ -739,21 +458,13 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  class="display nowrap table table-striped table-bordered" cellspacing="0"  ><tbody>';
-
-
+  <table  class="display nowrap table table-striped table-bordered table-responsive" cellspacing="0"  ><tbody>';
 
   foreach ($msg_detail as $datos) {
 
-
-
   $msg_detail  = json_decode($datos);
 
-
-
   $STATUS_GEN = $this->model->get_status_gen($id);
-
-
 
    switch ($STATUS_GEN) {
 
@@ -787,15 +498,7 @@ public function get_msg_info($id){
 
       break; 
 
-
-
   }
-
-
-
- 
-
-
 
   echo     "<tr><th style='text-align:left;'><strong>No. Guía</strong></th><td class='InfsalesTd order'>".$msg_detail->{'NO_SOL'}."</td><tr>
 
@@ -813,29 +516,17 @@ public function get_msg_info($id){
 
             <tr><th style='text-align:left;'><strong>Estado</strong></th><td class='InfsalesTd' ".$style." >".$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</td><tr>';
 
-
-
   }
-
-
-
-
 
   echo "</tbody></table></div></fieldset>";
 
-
-
-
-
   echo '<fieldset>
 
-        <table id="table_info" class="table table-striped table-bordered" cellspacing="0"  >
+        <table id="table_info" class="table table-striped table-bordered table-responsive" cellspacing="0"  >
 
         <thead>
 
           <tr>
-
-       
 
         <th width="5%" >No.</th>
 
@@ -845,17 +536,13 @@ public function get_msg_info($id){
 
         <th width="25%" class="text-center">Direccion de envio</th>
 
-        <th width="10%" class="text-center">Datos de remitente</th>
+        <th width="10%" class="text-center">Datos de destinatario</th>
 
         <th width="30%" class="text-center">Nota</th>
 
         <th width="5%" class="text-center">Estado</th> ';
 
- 
-
  if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
-
-
 
     echo '<th width="10%" class="text-center">Cambiar estado</th>
 
@@ -863,53 +550,27 @@ public function get_msg_info($id){
 
           </tr>';
 
-
-
         }
-
-
 
     echo  '</thead><tbody>';
 
-
-
-
-
         $sql = 'SELECT * FROM  MSG_SOL_DETAIL WHERE NO_SOL="'.$id.'";';
-
-
 
         $msg_items = $this->model->Query($sql);
 
-
-
         $c = 0;
-
-    
 
     foreach ($msg_items as $datos) {
 
-
-
-
-
         $msg_items  = json_decode($datos);        
-
-
 
         $ID_SOL= "'".$id."'";
 
         $ID_ITEM = "'".$msg_items->{'ITEMID'}."'";
 
-
-
         $status_color = $this->set_color_item_status($id,$msg_items->{'ITEMID'});
 
-
-
        if($msg_items->{'STATUS'} == 3){ $delivered = ' &nbsp;<i data-toggle="modal" data-target="#ViewModal" onclick= "javascript:view_modal('.$ID_SOL.','.$ID_ITEM.');" class="fa fa-pencil-square-o fa-2x"  ></i>&nbsp;'; }else{ $delivered=''; }
-
-
 
         echo '<tr '.$status_color.' >
 
@@ -927,37 +588,15 @@ public function get_msg_info($id){
 
               <td>',$delivered.'  '.$this->model->Query_value('MSG_SOL_STATUS','STATUS', 'WHERE ID="'.$msg_items->{'STATUS'}.'"').'</td>';
 
-
-
-            
-
-
-
-
-
       if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
-
-
 
          echo '<td>';
 
-
-
           if($STATUS_GEN!=5){
-
-
 
                   if($STATUS_GEN!=1){   
 
-
-
                     if($msg_items->{'STATUS'}==1){//ESTATUS NO RETIRADO -> EN TRANSITO
-
-
-
-
-
- 
 
                      echo '<a  title="SELECCIONAR COMO RETIRADO"   href="javascript:void(0)"  onclick= "javascript:PICKUP_ITEM('.$ID_SOL.','.$ID_ITEM.');"   class="btn btn-block   btn-secondary btn-icon  btn-icon-standalone btn-icon-standalone-right btn-single text-left" >
 
@@ -965,25 +604,13 @@ public function get_msg_info($id){
 
                           </a>'; 
 
-
-
                       }
 
-
-
-
-
                     if($msg_items->{'STATUS'}==2){//ESTATUS EN TRANSITO -> ENTREGADO
-
-
 
                       $ID_SOL= "'".$id."'";
 
                       $ID_ITEM = "'".$msg_items->{'ITEMID'}."'";
-
-
-
-  
 
                      echo '<a  title="SELECCIONAR COMO ENTREGADO"  data-toggle="modal" data-target="#DeliveryModal"   href="javascript:void(0)" onclick= "javascript:close_modal('.$ID_SOL.','.$ID_ITEM.');"   class="btn btn-block   btn-secondary btn-icon  btn-icon-standalone btn-icon-standalone-right btn-single text-left" >
 
@@ -991,59 +618,29 @@ public function get_msg_info($id){
 
                           </a>'; 
 
-
-
                       }
-
-
-
-
-
-
-
-
 
                   }
 
-
-
                }    
-
-
 
              echo      '</td>';
 
-
-
         }
 
-
-
         if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
-
-
-
-        
 
          echo '<td>';
 
           if($STATUS_GEN!=5){
 
-
-
                   if($STATUS_GEN!=1){
 
-
-
                     if($msg_items->{'STATUS'}!=4 AND $msg_items->{'STATUS'} !=3 ){//ESTATUS NO RETIRADO
-
-
 
                       $id_sol = "'".$id."'";
 
                       $id_item = "'".$msg_items->{'ITEMID'}."'";
-
-
 
                     echo '<a style="white-space: nowrap;" title="CANCELAR RETIRO" data-toggle="modal" data-target="#SpecModal" href="javascript:void(0)" onclick= "javascript:close_modal('.$id_sol.','.$id_item.');" class="btn btn-block   btn-secondary btn-icon  btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
@@ -1055,39 +652,19 @@ public function get_msg_info($id){
 
                   }
 
-
-
                }    
-
-
 
              echo      '</td>';
 
-
-
         }
-
-        
 
         echo   '</tr>';  
 
-
-
-
-
         }
-
-
 
 echo '</tbody></table>
 
         </fieldset><div class=" separador col-lg-12"></div>';
-
-
-
-
-
-
 
 echo '<div class=" separador col-lg-12"></div>
 
@@ -1103,27 +680,15 @@ echo '<div class=" separador col-lg-12"></div>
 
 </div>';
 
-
-
 if($STATUS_GEN!=5){
-
-
 
  if($STATUS_GEN != 4){
 
-
-
     $check_status_byItem = $this->check_sol_item_stat($id);
-
-
 
     if ($check_status_byItem == 1) {
 
-       
-
        if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
-
-
 
     echo '<div style="float:right;" class="col-md-2">
 
@@ -1137,25 +702,13 @@ if($STATUS_GEN!=5){
 
           </div>';
 
-
-
     }
 
     }
-
-   
-
-
-
-
 
     if($STATUS_GEN== 1){
 
-
-
       if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
-
-
 
        echo '<div style="float:right;" class="col-md-2">
 
@@ -1171,25 +724,15 @@ if($STATUS_GEN!=5){
 
     }
 
-
-
   }
-
-
 
  }
 
-
-
 }
-
-
 
 //LOG DE PROCESO
 
 ECHO '<div class=" separador col-lg-12"></div>
-
-
 
   <div class="col-lg-12">
 
@@ -1211,13 +754,7 @@ ECHO '<div class=" separador col-lg-12"></div>
 
           <tbody>';
 
-
-
-
-
 $CREACION = $this->model->Query("SELECT DATE, USER FROM MSG_SOL_HEADER WHERE  NO_SOL='".$id."'");
-
-
 
         foreach ($CREACION as $value ){
 
@@ -1227,11 +764,7 @@ $CREACION = $this->model->Query("SELECT DATE, USER FROM MSG_SOL_HEADER WHERE  NO
 
         }
 
-
-
 $CONFIRMACION = $this->model->Query("SELECT DATE, USER FROM MSG_SOL_STARTED WHERE  NO_SOL='".$id."'");
-
-
 
         foreach ($CONFIRMACION as $value ){
 
@@ -1240,8 +773,6 @@ $CONFIRMACION = $this->model->Query("SELECT DATE, USER FROM MSG_SOL_STARTED WHER
         echo '<tr><td>SOLICITUD CONFIRMADA. <strong> "EN PROCESO" </strong> </td><td class="numb" >'.$value->{'DATE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER'}).'</td></tr>';
 
         }
-
-
 
 $DELIVERY = $this->model->Query("SELECT DATE, USER, ID_STATUS, ITEM FROM MSG_SOL_DELIVERY WHERE   NO_SOL='".$id."'
 
@@ -1253,23 +784,11 @@ $DELIVERY = $this->model->Query("SELECT DATE, USER, ID_STATUS, ITEM FROM MSG_SOL
 
         echo '<tr><td>EL ITEM '.$value->{'ITEM'}.' HA CAMBIADO DE ESTADO A <strong>"'.$this->model->Query_value('MSG_SOL_STATUS','STATUS', 'WHERE ID="'.$value->{'ID_STATUS'}.'"').'" </strong>  </td><td class="numb" >'.$value->{'DATE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER'}).'</td></tr>';
 
-
-
         } 
-
-
-
-
-
-
 
 if ($STATUS_GEN != 5) {
 
-  
-
   $CANCELED = $this->model->Query("SELECT ITEMID, PRODUCT, desc_closed, LAST_CHANGE, USER_CLOSED FROM MSG_SOL_DETAIL WHERE   NO_SOL='".$id."' and STATUS = 4  ORDER BY LAST_CHANGE ASC");
-
-
 
         foreach ($CANCELED as $value ){
 
@@ -1277,23 +796,13 @@ if ($STATUS_GEN != 5) {
 
         echo '<tr><td>EL ITEM: '.$value->{'ITEMID'}.' '.$value->{'PRODUCT'}.' HA SIDO <strong>CANCELADO</strong> POR: '.$value->{'desc_closed'}.'</td><td class="numb" >'.$value->{'LAST_CHANGE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER_CLOSED'}).'</td></tr>';
 
-
-
         }
 
       }
 
-
-
-
-
 if($STATUS_GEN==4){
 
-
-
   $FIN =  $this->model->Query("SELECT DATE FROM MSG_SOL_DELIVERY WHERE   NO_SOL='".$id."' ORDER BY DATE DESC limit 1");
-
-
 
    foreach ($FIN as $value ){
 
@@ -1303,15 +812,9 @@ if($STATUS_GEN==4){
 
    }
 
-
-
 }
 
-
-
 if($STATUS_GEN==5){
-
-
 
  $CERRADO = $this->model->Query_value('MSG_SOL_HEADER','LAST_CHANGE',"WHERE NO_SOL='".$id."'");
 
@@ -1319,27 +822,13 @@ if($STATUS_GEN==5){
 
  $USER    = $this->model->Query_value('MSG_SOL_HEADER','USER_CLOSED',"WHERE NO_SOL='".$id."'");
 
- 
-
- 
-
  echo '<tr><td>LA SOLICITUD HA SIDO CANCELADA POR: '. $MOTIVO.'</td><td class="numb" >'.$CERRADO.'</td><td>'.$this->model->Get_User_Name( $USER ).'</td></tr>';
 
-
-
 }
-
-
-
-
 
 ECHO   '</tbody>
 
         </table></fieldset></div>';
-
-
-
-
 
 //MODA PARA CIERRE FORZOSO DE LA SOLICITUD
 
@@ -1353,8 +842,6 @@ $MODAL = '
 
   <div class="modal-dialog modal-lg">
 
-
-
     <!-- Modal content-->
 
     <div class="modal-content">
@@ -1366,8 +853,6 @@ $MODAL = '
         <h3 >Motivo de cancelación</h3>
 
       </div>
-
-
 
       <div class="col-lg-12 modal-body">
 
@@ -1391,21 +876,13 @@ $MODAL = '
 
     </div>
 
-
-
   </div>
 
 </div>
 
-
-
-
-
 <div id="SpecModal" class="modal fade" role="dialog">
 
   <div class="modal-dialog modal-lg">
-
-
 
     <!-- Modal content-->
 
@@ -1418,8 +895,6 @@ $MODAL = '
         <h3 >Motivo de cancelación</h3>
 
       </div>
-
-
 
       <div class="col-lg-12 modal-body">
 
@@ -1443,19 +918,13 @@ $MODAL = '
 
     </div>
 
-
-
   </div>
 
 </div>
 
-
-
 <div id="DeliveryModal" class="modal fade" role="dialog">
 
   <div class="modal-dialog modal-lg">
-
-
 
     <!-- Modal content-->
 
@@ -1469,13 +938,9 @@ $MODAL = '
 
       </div>
 
-
-
       <div class="col-lg-12 modal-body">
 
       <!--ini Modal  body-->  
-
-      
 
       <div class="col-lg-12">
 
@@ -1485,15 +950,9 @@ $MODAL = '
 
       </div>
 
-
-
       <div class="title col-lg-12"></div>
 
-
-
       <div class="col-lg-6">
-
-
 
         <label>Firma: </label>
 
@@ -1509,11 +968,7 @@ $MODAL = '
 
         </div>
 
-      
-
       </div>
-
-
 
       <div  class="col-lg-6">
 
@@ -1523,11 +978,7 @@ $MODAL = '
 
                <form id="fotoform" >
 
-
-
                <input  id="imageFile" type="file" onchange="readURL(this);"  style="display: none;" />
-
-               
 
                </form>
 
@@ -1541,13 +992,9 @@ $MODAL = '
 
         </div>
 
-
-
       </div>
 
       <!--fin Modal  body-->
-
-
 
       <div class="title col-lg-12"></div>
 
@@ -1563,17 +1010,11 @@ $MODAL = '
 
 </div>
 
-
-
 </div>
-
-
 
 <div id="ViewModal" class="modal fade" role="dialog">
 
   <div class="modal-dialog modal-lg">
-
-
 
     <!-- Modal content-->
 
@@ -1587,13 +1028,9 @@ $MODAL = '
 
       </div>
 
-
-
       <div class="col-lg-12 modal-body">
 
       <!--ini Modal  body-->  
-
-      
 
       <div class="col-lg-12">
 
@@ -1603,15 +1040,9 @@ $MODAL = '
 
       </div>
 
-
-
       <div class="title col-lg-12"></div>
 
-
-
       <div class="col-lg-6">
-
-
 
         <label>Firma: </label>
 
@@ -1623,8 +1054,6 @@ $MODAL = '
 
       </div>
 
-
-
       <div  class="col-lg-6">
 
             <fieldset style="display: block;"  width="100%" height="50%" >
@@ -1635,13 +1064,9 @@ $MODAL = '
 
         </div>
 
-
-
       </div>
 
       <!--fin Modal  body-->
-
-
 
       <div class="title col-lg-12"></div>
 
@@ -1655,33 +1080,15 @@ $MODAL = '
 
 </div>
 
-
-
-
-
-
-
 ';
-
-
 
 ECHO $MODAL;
 
-
-
-
-
       }else{
-
-
 
         echo '<div id="ERROR" class="alert alert-danger">EL No. <strong>'.$id.'</strong> DE GUÍA NO EXISTE</div>';
 
-
-
       }
-
-   
 
 }
 
@@ -1689,35 +1096,17 @@ ECHO $MODAL;
 
 //FIN MENSAJERIA//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
 public function check_sol_item_stat($id){
-
-
-
-
 
   $NO_ITEMS = $this->model->Query_value('MSG_SOL_DETAIL' ,'COUNT(*)','WHERE NO_SOL="'.$id.'";');
 
-
-
   $NO_ITEMS_STAT = $this->model->Query_value('MSG_SOL_DETAIL' ,'COUNT(*)','WHERE NO_SOL="'.$id.'" AND STATUS="1";');
-
-
 
     if($NO_ITEMS == $NO_ITEMS_STAT ){
 
- 
-
         return  1;
 
-
-
     }else{
-
-
 
          return 0;
 
@@ -1725,23 +1114,13 @@ public function check_sol_item_stat($id){
 
 }
 
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////
 
 public function set_color_item_status($id,$item){
 
-
-
-
-
  $status = $this->model->Query_value('MSG_SOL_DETAIL','STATUS','WHERE NO_SOL="'.$id.'" 
 
                                                                       AND ITEMID="'.$item.'";');
-
-
 
   switch ($status) {
 
@@ -1769,27 +1148,13 @@ public function set_color_item_status($id,$item){
 
       break; 
 
-
-
   }
 
-
-
   return $style;
-
-
 
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -1797,43 +1162,25 @@ public function set_color_item_status($id,$item){
 
 public function get_status_list_item($actual){
 
-
-
   $list_status ='';
-
-
 
   $sql = 'SELECT * FROM MSG_SOL_STATUS WHERE ID > "'.$actual.'"';
 
   $item_list_status = $this->model->Query($sql);
 
-
-
   foreach ($item_list_status  as $value) {
-
-
 
     $value = json_decode($value);
 
-
-
     $list_status .= '<option value="'.$value->{'ID'}.'">'.$value->{'STATUS'}.'</option>';
 
-    
-
     }
-
-
 
 return $list_status;
 
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -1843,13 +1190,7 @@ public function change_item_st($NO_SOL,$ITEMID,$ST){
 
 $this->SESSION();
 
-
-
 if($_GET['RevName']!=''){
-
-
-
-
 
 $value_del  = array( 'ITEM' => $ITEMID ,
 
@@ -1859,23 +1200,11 @@ $value_del  = array( 'ITEM' => $ITEMID ,
 
                      'USER_RECV'  => $_REQUEST['RevName'] );
 
-
-
-
-
 $this->model->insert('MSG_SOL_DELI_REG',$value_del);
-
-
 
 }
 
-
-
-
-
 usleep(500);
-
-
 
 $value_del  = array( 'ID_STATUS' => $ST ,
 
@@ -1885,35 +1214,15 @@ $value_del  = array( 'ID_STATUS' => $ST ,
 
                      'USER' => $this->model->active_user_id );
 
-
-
 $this->model->insert('MSG_SOL_DELIVERY',$value_del);
 
-
-
 usleep(500);
-
-
 
 $clause = ' NO_SOL ="'.$NO_SOL.'" AND ITEMID="'.$ITEMID.'"';
 
 $value  = array( 'STATUS' => $ST );
 
-
-
 $this->model->update('MSG_SOL_DETAIL',$value,$clause);
-
-
-
-
-
-
-
-
-
-
-
-
 
 ECHO "1";
 
@@ -1925,41 +1234,23 @@ ECHO "1";
 
 */
 
-
-
 }
-
-
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 //SET CONFIRMACION DE ENVIO PARA INICIAR EL PROCESO
 
-
-
 public function set_sol_started($id){
-
-
 
 $this->SESSION();
 
-
-
 if($_SESSION){
-
-
 
 $id_user = $this->model->active_user_id;
 
-
-
 $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL ="'.$id.'"');
 
-
-
   if(!$VALID){
-
-
 
        $value_to_set  = array( 
 
@@ -1969,31 +1260,15 @@ $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL =
 
         );
 
-
-
       $res = $this->model->insert('MSG_SOL_STARTED',$value_to_set);
-
-
 
     echo '<script>  alert("Se confirma correctamente  la solicitud No. '.$id.'");  
 
-
-
                    self.location="'.URL.'index.php?url=ges_mensajeria/msg_entrega/'.$id.'"; 
-
-
 
          </script>';
 
-
-
-
-
   }else{
-
-
-
-
 
     echo '<script>  alert("La solicitud No. '.$id.' ya ha iniciado la cotnfirmada");  
 
@@ -2001,27 +1276,13 @@ $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL =
 
           </script>';
 
-
-
-
-
   }
 
-
-
 }
-
-
-
-
-
-    
 
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
-
-
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -2029,35 +1290,21 @@ $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL =
 
 public function send_test_mail($emailtest){
 
-
-
 require 'PHP_mailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
-
-
 
 $mail->IsMAIL(); // enable SMTP
 
 $mail->IsHTML(true);
 
-
-
-
-
 $sql = "SELECT * FROM CONF_SMTP WHERE ID='1'";
 
-
-
 $smtp= $this->model->Query($sql);
-
-
 
 foreach ($smtp as $smtp_val) {
 
   $smtp_val= json_decode($smtp_val);
-
-
 
   $mail->Host =     $smtp_val->{'HOSTNAME'};
 
@@ -2073,23 +1320,11 @@ foreach ($smtp as $smtp_val) {
 
   $mail->SMTPDebug= $smtp_val->{'SMTPSDebug'};
 
-
-
   $mail->SetFrom($smtp_val->{'USERNAME'});
-
-
 
 }
 
-
-
-
-
-
-
 $mail->Subject = utf8_decode('Prueba de configurarión SMTP (ACI-WEB)');
-
-
 
 $message_to_send ='<html>
 
@@ -2107,107 +1342,51 @@ para certificar el funcionamiento de su configuracion SMTP.</body>
 
 </html>';
 
-
-
 $mail->Body = $message_to_send;
-
-
 
 $mail->AddAddress($emailtest);
 
-
-
-
-
-
-
 if(!$mail->send()) {
-
- 
-
-
 
    $alert .= 'El correo no puede ser enviado.';
 
    $alert .= 'Error: ' . $mail->ErrorInfo;
 
-
-
-   
-
-
-
 } else {
-
-  
 
   $alert = 'El correo de verificacion ha sido enviado';
 
 }
 
-
-
 echo $alert;
-
-
 
 }
 
-
-
-
-
 public function activate_user($mail){
-
-
 
 $query = "SELECT onoff FROM SAX_USER WHERE email = '".$mail."';";
 
-
-
-
-
 $res = $this->model->Query($query);
-
-
-
-
 
 foreach ($res as $val) {
 
-
-
   $val = json_decode($val);
 
-
-
     if ($val->{'onoff'} == 0) {
-
-  
 
         $update = "UPDATE SAX_USER SET onoff = 1 WHERE email = '".$mail."';";
 
         $this->model->Query($update);
 
-  
-
         echo '<script>  alert("El usuario '.$mail.' ha sido activado exitosamente");  
-
-
 
                  self.location="'.URL.'index.php?url=login/index"; 
 
-
-
        </script>';
-
-
 
     }
 
     else{
-
-
 
   echo '<script>  alert("El usuario '.$mail.' ya ha sido activado anteriormente");  
 
@@ -2219,19 +1398,11 @@ foreach ($res as $val) {
 
 }
 
-
-
 }
-
-
 
 public function cancel_item($id_sol,$id_item,$cancel_desc){
 
-
-
 $this->SESSION();
-
-
 
 $values  = array( 'STATUS' => 4 ,
 
@@ -2243,63 +1414,25 @@ $values  = array( 'STATUS' => 4 ,
 
                      );
 
-
-
 $clause = "NO_SOL = '".$id_sol."' and ITEMID = '".$id_item."';";
-
-
 
 $this->model->update('MSG_SOL_DETAIL',$values,$clause);
 
-
-
-
-
 }
-
-
-
-
 
 public function cancel_sol($id_sol,$cancel_desc){
 
-
-
 $this->SESSION();
-
-
-
-
-
-
 
   $cancel_head = "UPDATE MSG_SOL_HEADER SET ST_CLOSED = 1, USER_CLOSED = ".$this->model->active_user_id.", DESC_CLOSED = '".$cancel_desc."' WHERE NO_SOL = '".$id_sol."';";
 
-
-
       $this->model->Query($cancel_head);
-
-
 
   $cancel_detail = "UPDATE MSG_SOL_DETAIL SET STATUS = 4, closed = 1, desc_closed = '".$cancel_desc."', USER_CLOSED = ".$this->model->active_user_id." WHERE NO_SOL = '".$id_sol."';";
 
-
-
       $this->model->Query($cancel_detail);
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -2307,40 +1440,16 @@ $this->SESSION();
 
 public function view_singed_info($id,$item){
 
-
-
 $sql = 'SELECT * FROM MSG_SOL_DELI_REG WHERE NO_SOL="'.$id.'" AND ITEM="'.$item.'"';
-
-
 
 $RES = $this->model->Query($sql);
 
-
-
 echo $RES[0];
 
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 //DEBAJO DE ESTA LINEA TERMINA LA LLAVE QUE CIERRA LA CLASE -----NO BORRAR-------!
 
-
-
 }
-
-
 
 ?>
