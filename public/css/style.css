@@ -68,14 +68,12 @@ select, input{
 table {
  
     border: 1px solid #ddd !important;
- 
-
-}
-
-table.dataTable {
-border-collapse: collapse;
+ border-collapse: collapse;
 width: 100%;
+
 }
+
+
 
 
 .wrapper {
