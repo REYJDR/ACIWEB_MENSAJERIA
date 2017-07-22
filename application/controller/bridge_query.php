@@ -416,9 +416,9 @@ public function get_msg_info($id){
 
   if($this->model->active_user_role == 'repar'){
 
-    $USER_ID = $this->model->Query_value('MSG_SOL_HEADER','USER','WHERE MSG_SOL_HEADER.REP_ASIG="'.$this->model->active_user_id.'"');
+    $ASIGN_ID = $this->model->Query_value('MSG_SOL_HEADER','REP_ASIG','WHERE MSG_SOL_HEADER.NO_SOL="'.$id.'"');
 
-    if($USER_ID != $this->model->active_user_id){
+    if($ASIGN_I != $this->model->active_user_id){
      
       die("<script>MSG_ERROR('No se encontro el No. de solicitud, o no se encuentra asignada a su perfil', 0);</script>");
 
