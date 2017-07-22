@@ -988,7 +988,7 @@ var datos= "url=bridge_query/set_sol_started/"+id_sol+"/"+asig;
         }
    });
 
-}
+
 
 
 
