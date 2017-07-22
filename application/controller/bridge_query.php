@@ -402,12 +402,6 @@ public function get_msg_info($id){
 
   var table = $("#table_info").dataTable({
 
-         rowReorder: {
-
-              selector: "td:nth-child(2)"
-
-          },
-
         bSort: false,
 
         select:false,
@@ -426,12 +420,6 @@ public function get_msg_info($id){
 
 
    var table = $("#table_mov").dataTable({
-
-         rowReorder: {
-
-              selector: "td:nth-child(2)"
-
-          },
 
         bSort: false,
 
@@ -459,7 +447,7 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  class="table table-striped table-bordered table-responsive" cellspacing="0"  ><tbody>';
+  <table  class="table table-striped table-bordered table-responsive" cellspacing="0"  >';
 
   foreach ($msg_detail as $datos) {
 
@@ -519,7 +507,7 @@ public function get_msg_info($id){
 
   }
 
-  echo "</tbody></table></div></fieldset>";
+  echo "</table></div></fieldset>";
 
   echo '<fieldset>
 
@@ -527,7 +515,7 @@ public function get_msg_info($id){
 
         <thead>
 
-          <tr>
+        <tr>
 
         <th width="5%" >No.</th>
 
@@ -547,7 +535,7 @@ public function get_msg_info($id){
 
     echo '<th width="10%" class="text-center">Cambiar estado</th>
 
-         <th width="5%" >Cancelar</th>
+          <th width="5%" >Cancelar</th>
 
           </tr>';
 
@@ -587,7 +575,7 @@ public function get_msg_info($id){
 
               <td>'.$msg_items->{'NOTA'}.'</td>
 
-              <td>',$delivered.'  '.$this->model->Query_value('MSG_SOL_STATUS','STATUS', 'WHERE ID="'.$msg_items->{'STATUS'}.'"').'</td>';
+              <td>'.$delivered.'  '.$this->model->Query_value('MSG_SOL_STATUS','STATUS', 'WHERE ID="'.$msg_items->{'STATUS'}.'"').'</td>';
 
       if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
 
