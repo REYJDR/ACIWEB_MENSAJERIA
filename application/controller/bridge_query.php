@@ -773,7 +773,7 @@ if($STATUS_GEN!=5){
       if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
     echo '<div style="float:left;" class="col-lg-4">
-            <a href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'"   class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
+            <a  data-toggle="modal" data-target="#AsigModal" href="javascript:void(0)" class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
                <img  class="icon" src="img/Button Check.png" />
 
@@ -781,6 +781,8 @@ if($STATUS_GEN!=5){
 
             </a>
           </div>';
+//href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'" 
+
 
     }
 
@@ -941,6 +943,51 @@ $MODAL = '
   </div>
 
 </div>
+
+
+<!-- Modal -->
+
+<div id="AsigModal" class="modal fade" role="dialog">
+
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h3 >Asignacion de solicitud</h3>
+
+      </div>
+
+      <div class="col-lg-12 modal-body">
+
+      <!--ini Modal  body-->  
+         <select id="msg_sol_asing" name="msg_sol_asing">
+          $this->ReparList();
+         </select>
+      <!--fin Modal  body-->
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" onclick="javascript:cancel_sol('.$id.');" data-dismiss="modal" class="btn btn-primary" >Aceptar</button>
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
 
 <div id="SpecModal" class="modal fade" role="dialog">
 
@@ -1509,6 +1556,25 @@ $RES = $this->model->Query($sql);
 echo $RES[0];
 
 }
+
+
+public function ReparList(){
+
+$list = '';
+
+$repar = $this->model->Query('SELECT id, name, lastname FROM SAX_USER WHERE onoff="1" and role="repar";');
+
+foreach ($repar as $value) {
+
+  $value = json_decode($value);
+
+    $list .='<option value="'.$value->{'id'}.'" >'.$value->{'name'}.' '.$value->{'lastname'}.'</option>';
+  }
+  
+return  $list;
+
+}
+
 
 //DEBAJO DE ESTA LINEA TERMINA LA LLAVE QUE CIERRA LA CLASE -----NO BORRAR-------!
 
