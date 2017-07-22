@@ -465,7 +465,7 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  id="table_info"  class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
+  <table   class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
 
   foreach ($msg_detail as $datos) {
 
