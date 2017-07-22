@@ -972,7 +972,7 @@ $MODAL = '
       <div class="col-lg-8">
        <legend>Repartidor</legend>
             
-        <select id="customer" name="customer" class="select col-lg-12" required="" tabindex="-1" title="">
+        <select id="msg_sol_asing" name="msg_sol_asing" class="select col-lg-12 " required="" tabindex="-1" title="">
         <option selected="" disabled=""></option>
           '.$listRepar.'
          </select>
