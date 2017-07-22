@@ -243,14 +243,7 @@ font-size: 12px;
   overflow-y: scroll;
 }
 
-fieldset {
 
-  width: 100%;
-  max-width: 100%;
-  
-  overflow-x: scroll;
-overflow-x: hidden;
-}
 
 .numb{
 
@@ -259,13 +252,18 @@ text-align: right;
 }
 
 fieldset {
-    border-radius: 6px;
-    border:1px solid #c0c0c0;
-   /* margin:0 1px;*/
-    margin: 0px;
-    padding:0.35em 0.625em 0.75em;
+  border-radius: 6px;
+  border:1px solid #c0c0c0
+  margin: 0px;
+  padding:0.35em 0.625em 0.75em;
+  width: 100%;
+  max-width: 100%;
+  
+  overflow-x: scroll;
+  /*overflow-x: hidden;*/
 
 }
+
 legend {
     border:0;
     padding:0
