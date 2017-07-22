@@ -404,7 +404,7 @@ public function get_msg_info($id){
 
         bSort: false,
 
-        select:false,
+        select: false,
 
         scrollY: "800px",
 
@@ -423,7 +423,7 @@ public function get_msg_info($id){
 
         bSort: false,
 
-        select:false,
+        select: false,
 
         scrollY: "800px",
 
@@ -441,7 +441,7 @@ public function get_msg_info($id){
 
         bSort: false,
 
-        select:false,
+        select: false,
 
         scrollY: "800px",
 
@@ -465,7 +465,7 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  id="table_info"  class="table table-striped table-bordered table-responsive" cellspacing="0"  ><tbody>';
+  <table  id="table_info"  class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
 
   foreach ($msg_detail as $datos) {
 
@@ -529,7 +529,7 @@ public function get_msg_info($id){
 
   echo '<fieldset>
 
-        <table id="table_mov" class="table  table-striped table-bordered table-responsive" cellspacing="0"  >
+        <table id="table_mov" class="table  table-striped table-bordered " cellspacing="0"  >
 
         <thead>
 
@@ -745,7 +745,7 @@ ECHO '<div class=" separador col-lg-12"></div>
 
     <legend>Registro de cambios</legend>
 
-        <table id="table_log" class="table  table-striped table-bordered table-responsive" cellspacing="0" >
+        <table id="table_log" class="table  table-striped table-bordered " cellspacing="0" >
 
           <thead> 
 
