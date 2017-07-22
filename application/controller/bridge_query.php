@@ -512,15 +512,15 @@ public function get_msg_info($id){
 
   echo     '
 
-<div class="col-12-lg">
- <div class="col-12-lg"><strong>No. Guía</strong>'.$msg_detail->{'NO_SOL'}.'</div>
- <div class="col-12-lg"><strong>Fecha</strong>   '.$msg_detail->{'DATE'}.'</div>
- <div class="col-12-lg"><strong>Cliente</strong> '.$msg_detail->{'ORI_NAME'}.'</div>
- <div class="col-12-lg"><strong>Telf.</strong>   '.$msg_detail->{'ORI_TELF'}.'</div>
- <div class="col-12-lg"><strong>E-mail</strong>  '.$msg_detail->{'ORI_MAIL'}.'</div>
- <div class="col-12-lg"><strong>Dirección de retiro</strong>'.$msg_detail->{'ORI_DIR'}.'</div>
- <div class="col-12-lg"><strong>Nota</strong>   '.$msg_detail->{'ORI_NOTA'}.'</div>
- <div class="col-12-lg"><strong>Estado</strong><span '.$style.' >'.$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</span>
+<div class="col-12-lg border="1">
+ <div class="col-12-lg"><strong>No. Guía</strong>&nbsp'.$msg_detail->{'NO_SOL'}.'</div>
+ <div class="col-12-lg"><strong>Fecha</strong>&nbsp   '.$msg_detail->{'DATE'}.'</div>
+ <div class="col-12-lg"><strong>Cliente</strong>&nbsp '.$msg_detail->{'ORI_NAME'}.'</div>
+ <div class="col-12-lg"><strong>Telf.</strong>&nbsp   '.$msg_detail->{'ORI_TELF'}.'</div>
+ <div class="col-12-lg"><strong>E-mail</strong>&nbsp  '.$msg_detail->{'ORI_MAIL'}.'</div>
+ <div class="col-12-lg"><strong>Dirección de retiro</strong>&nbsp'.$msg_detail->{'ORI_DIR'}.'</div>
+ <div class="col-12-lg"><strong>Nota</strong>&nbsp   '.$msg_detail->{'ORI_NOTA'}.'</div>
+ <div class="col-12-lg"><strong>Estado</strong>&nbsp<span '.$style.' >'.$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</span>
  </div>
 </div>';
 
@@ -678,7 +678,7 @@ echo '<div class="separador col-lg-12"></div>
 
 <div class="col-lg-12">
 
-<div  class="col-lg-4">
+<div  style="float:left;"  class="col-lg-4">
   <a href="'.URL.'index.php?url=ges_mensajeria/msg_print/'.$id.'"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
      <img  class="icon" src="img/Printer.png" />
@@ -698,7 +698,7 @@ if($STATUS_GEN!=5){
 
        if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
-    echo '<div  class="col-lg-4">
+    echo '<div style="float:left;"  class="col-lg-4">
             <a title="CANCELAR SOLICITUD" data-toggle="modal" data-target="#GenModal" href="javascript:void(0)"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
               <img  class="icon" src="img/Stop.png" />
@@ -716,7 +716,7 @@ if($STATUS_GEN!=5){
 
       if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
-    echo '<div  class="col-lg-4">
+    echo '<div style="float:left;" class="col-lg-4">
             <a href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'"   class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
                <img  class="icon" src="img/Button Check.png" />
