@@ -513,29 +513,47 @@ public function get_msg_info($id){
   echo     '
 
 <div class="col-12-lg">
+
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>No. Guía</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'NO_SOL'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>Fecha</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'DATE'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>Cliente</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'ORI_NAME'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>Telf.</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'ORI_TELF'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>E-mail</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'ORI_MAIL'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>Dirección de retiro</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'ORI_DIR'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>Nota</strong></div>
   <div class="col-8-lg">'.$msg_detail->{'ORI_NOTA'}.'</div>
+</div>
 
+<div class="col-12-lg">
   <div class="col-4-lg"><strong>Estado</strong></div>
   <div class="col-8-lg" '.$style.' >'.$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</div>
+</div>
+
 </div>';
 
 
