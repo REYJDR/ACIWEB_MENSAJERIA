@@ -594,9 +594,10 @@ padding: 0px;
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #CCC;
 }
-@media (max-width: 600px) { 
+@media (
+  max-width: 600px) { 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+        color: #F7D358;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
