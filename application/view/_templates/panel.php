@@ -54,7 +54,7 @@ if($value->{'mod_stock'}=='1'){ $mod_stoc_CK = 'checked'; }else{ $mod_stoc_CK = 
         <li><a tabindex="0" href="<?PHP ECHO URL; ?>index.php?url=ges_mensajeria/msg_sol"><img class='icon' src="img/mailbox.png" />Solicitud de envio</a></li> 
       </ul>
       </li>
-<?php }else{ ?>
+<?php }elseif( $this->model->active_user_role!='repar'){ ?>
 
 
       <li><a tabindex="0" href="<?PHP ECHO URL; ?>index.php?url=ges_mensajeria/msg_sol"><img class='icon' src="img/mailbox.png" />Solicitud de envio</a></li> 
@@ -62,7 +62,7 @@ if($value->{'mod_stock'}=='1'){ $mod_stoc_CK = 'checked'; }else{ $mod_stoc_CK = 
 
  <?php  } ?>
 
- <?php if($this->model->active_user_role!='user' ){ ?>
+ <?php if($this->model->active_user_role!='user'  ){ ?>
 
   <li><a tabindex="0" href="<?PHP ECHO URL; ?>index.php?url=ges_mensajeria/msg_entrega/0"><img class='icon' src="img/history.png" />Registro de entregas</a></li> 
   
