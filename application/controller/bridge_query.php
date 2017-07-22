@@ -470,7 +470,7 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  id="table_info" width="100%" class="table table-striped table-bordered" cellspacing="0"  >
+  <table  id="table_info" width="80%" class="table table-striped table-bordered" cellspacing="0"  >
 
   <thead><th></th><th></th></thead>
   <tbody>';
