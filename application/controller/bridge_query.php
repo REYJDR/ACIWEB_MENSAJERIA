@@ -553,17 +553,11 @@ public function get_msg_info($id){
 
     echo '<th width="10%" class="text-center">Cambiar estado</th>
 
-          <th width="5%" >Cancelar</th>
-
-          </tr>';
-
-        }else{
-
-    echo '</tr>';
+          <th width="5%" >Cancelar</th>';
 
         }
 
-    echo  '</thead><tbody>';
+    echo  '</tr></thead><tbody>';
 
         $sql = 'SELECT * FROM  MSG_SOL_DETAIL WHERE NO_SOL="'.$id.'";';
 
@@ -635,7 +629,7 @@ public function get_msg_info($id){
 
                }    
 
-             echo      '</td>';
+        echo '</td>';
 
         }
 
@@ -665,7 +659,7 @@ public function get_msg_info($id){
 
                }    
 
-             echo      '</td>';
+         echo '</td>';
 
         }
 
