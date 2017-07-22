@@ -457,7 +457,94 @@ public function get_msg_info($id){
 
   </script>';
 
+  echo '<br/><br/>
 
+  <fieldset>
+
+  <div class="col-lg-6" >
+
+  <legend>Detalle de envio</legend>
+
+  <table  id="table_info"  class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
+
+  foreach ($msg_detail as $datos) {
+
+  $msg_detail  = json_decode($datos);
+
+  $STATUS_GEN = $this->model->get_status_gen($id);
+
+   switch ($STATUS_GEN) {
+
+    case 5:
+
+       $style = 'style="background-color:#D8D8D8;"';//GRIS
+
+      break;
+
+    case 4:
+
+       $style = 'style="background-color:#BCF5A9;"';//verder
+
+      break;
+
+    case 3:
+
+       $style = 'style="background-color:#F2F5A9;"';//AMARILLO
+
+      break;
+
+    case 2:
+
+       $style = 'style="background-color:#F7BE81;"';//NARANJA
+
+      break; 
+
+    case 1:
+
+       $style = 'style="background-color:#F5A9A9;"';//ROJO
+
+      break; 
+
+  }
+
+  echo     "<tr>
+              <th style='text-align:left;'><strong>No. Guía</strong></th>
+              <td class='InfsalesTd order'>".$msg_detail->{'NO_SOL'}."</td>
+            </tr>
+
+            <tr>
+              <th style='text-align:left;'><strong>Fecha</strong></th>
+              <td class='InfsalesTd'>".$msg_detail->{'DATE'}."</td>
+            </tr>
+            <tr>
+              <th style='text-align:left;'><strong>Cliente</strong></th>
+              <td class='InfsalesTd'>".$msg_detail->{'ORI_NAME'}."</td>
+            </tr>
+            <tr>
+              <th style='text-align:left;'><strong>Telf.</strong></th>
+              <td class='InfsalesTd'>".$msg_detail->{'ORI_TELF'}."</td>
+            </tr>
+            <tr>
+              <th style='text-align:left;'><strong>E-mail</strong></th>
+              <td class='InfsalesTd'>".$msg_detail->{'ORI_MAIL'}.'</td>
+            </tr>
+            <tr>
+               <th style="text-align:left;" ><strong>Dirección de retiro</strong></th>
+               <td class="InfsalesTd">'.$msg_detail->{'ORI_DIR'}."</td>
+            </tr>
+            <tr>
+               <th style='text-align:left;'><strong>Nota</strong></th>
+               <td class='InfsalesTd'>".$msg_detail->{'ORI_NOTA'}."</td>
+            </tr>
+            <tr>
+               <th style='text-align:left;'><strong>Estado</strong></th>
+               <td class='InfsalesTd' ".$style." >".$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</td>
+            </tr>
+            </tbody></table>';
+
+  }
+
+  echo "</div></fieldset>";
 
   echo '<fieldset>
 
