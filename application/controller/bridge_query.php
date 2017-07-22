@@ -195,7 +195,6 @@ table.yadcf(
 
     <tbody>';
 
-ECHO $clause;
 $table.= $this->get_msg_sol_br($clause);
 
 $table.= '</tbody></table>';
@@ -378,6 +377,16 @@ $STATUS_GEN = $this->model->get_status_gen($VALUE->{'NO_SOL'});
 
   }
 
+if($VALUE->{'REP_ASIG'}!=null){
+
+$asignado = $this->model->Get_User_Name($VALUE->{'REP_ASIG'});
+
+}else{
+
+$asignado = 'NO ASIGNADO';
+
+}
+
      $TR .= '<tr>
 
               <td class="numb"><a href="'.URL.'index.php?url=ges_mensajeria/msg_entrega/'.$VALUE->{'NO_SOL'}.'">'.$VALUE->{'NO_SOL'}.'</a></td>
@@ -386,7 +395,7 @@ $STATUS_GEN = $this->model->get_status_gen($VALUE->{'NO_SOL'});
 
               <td>'.$this->model->Get_User_Name($VALUE->{'USER'}).'</td>
 
-              <td>'.$this->model->Get_User_Name($VALUE->{'REP_ASIG'}).'</td>
+              <td>'.$asignado.'</td>
 
               <td>'.$VALUE->{'ORI_NOTA'}.'</td>
 
