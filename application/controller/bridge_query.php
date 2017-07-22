@@ -80,6 +80,30 @@ $clause .= 'WHERE MSG_SOL_HEADER.USER ="'.$this->model->active_user_id.'"';
 
     }
 
+}elseif ($this->model->active_user_role == 'repar' ) {
+
+$clause .= 'WHERE MSG_SOL_HEADER.REP_ASIG ="'.$this->model->active_user_id.'"';
+
+    if($date1!=''){
+
+       if($date2!=''){
+
+          $clause.= ' and DATE >= "'.$date1.'%" and DATE <= "'.$date2.'%" ORDER BY NO_SOL '.$sort.' limit '.$limit.';';           
+
+        }
+
+       if($date2==''){ 
+
+         $clause.= ' and DATE like "'.$date1.'%" ORDER BY NO_SOL '.$sort.' limit '.$limit.';';
+
+       }
+
+    }elseif ($date1 == '' && $date2 == '') {
+
+      $clause.='ORDER BY NO_SOL '.$sort.' limit '.$limit.' ;';
+
+    }
+
 }else{
 
     if($date1!=''){

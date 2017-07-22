@@ -119,7 +119,8 @@ $(window).load(function(){
 <fieldset>
   <legend><img class='icon' src="img/System Activity Monitor.png" />Panel de control</legend>
     
-    <?php  if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){ ?> 
+    <?php  if($this->model->active_user_role == 'admin' or 
+              $this->model->active_user_role == 'user_admin' ){ ?> 
 
      <div class="graphcont  col-lg-6">
       <fieldset>
@@ -141,7 +142,7 @@ $(window).load(function(){
              
       </div>
 
-<?php } ?>
+    <?php } ?>
  
 <div class="separador col-lg-12"></div>
 
@@ -160,7 +161,8 @@ $(window).load(function(){
 
 </div>
 <?php
-if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
+if($this->model->active_user_role == 'admin' or 
+   $this->model->active_user_role == 'user_admin' ){
 
 $SOL  =  $this->model->get_sol_to_graph();
 

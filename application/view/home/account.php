@@ -145,7 +145,8 @@ table.yadcf([
 		 <?php } ?>
 		 <?php if($this->model->active_user_role=='admin' or $this->model->active_user_role=='user_admin'){ ?>
 			<option value="user_admin" >Usuario Admin.</option>
-			<option value="user" >Cliente</option>
+			<option value="repar" >Repartidor</option>
+			<option value="user"  >Cliente</option>
          <?php } ?>
 		  </select>
 	     </div>
