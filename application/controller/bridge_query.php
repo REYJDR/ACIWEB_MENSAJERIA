@@ -457,75 +457,7 @@ public function get_msg_info($id){
 
   </script>';
 
-  echo '<br/><br/>
 
-  <fieldset>
-
-  <div class="col-lg-6" >
-
-  <legend>Detalle de envio</legend>
-
-  <table  id="table_info"  class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
-
-  foreach ($msg_detail as $datos) {
-
-  $msg_detail  = json_decode($datos);
-
-  $STATUS_GEN = $this->model->get_status_gen($id);
-
-   switch ($STATUS_GEN) {
-
-    case 5:
-
-       $style = 'style="background-color:#D8D8D8;"';//GRIS
-
-      break;
-
-    case 4:
-
-       $style = 'style="background-color:#BCF5A9;"';//verder
-
-      break;
-
-    case 3:
-
-       $style = 'style="background-color:#F2F5A9;"';//AMARILLO
-
-      break;
-
-    case 2:
-
-       $style = 'style="background-color:#F7BE81;"';//NARANJA
-
-      break; 
-
-    case 1:
-
-       $style = 'style="background-color:#F5A9A9;"';//ROJO
-
-      break; 
-
-  }
-
-  echo     "<tr><th style='text-align:left;'><strong>No. Guía</strong></th><td class='InfsalesTd order'>".$msg_detail->{'NO_SOL'}."</td></tr>
-
-            <tr><th style='text-align:left;'><strong>Fecha</strong></th><td class='InfsalesTd'>".$msg_detail->{'DATE'}."</td></tr>
-
-            <tr><th style='text-align:left;'><strong>Cliente</strong></th><td class='InfsalesTd'>".$msg_detail->{'ORI_NAME'}."</td></tr>
-
-            <tr><th style='text-align:left;'><strong>Telf.</strong></th><td class='InfsalesTd'>".$msg_detail->{'ORI_TELF'}."</td></tr>
-
-            <tr><th style='text-align:left;'><strong>E-mail</strong></th><td class='InfsalesTd'>".$msg_detail->{'ORI_MAIL'}.'</td></tr>
-
-            <tr><th style="text-align:left;" ><strong>Dirección de retiro</strong></th><td class="InfsalesTd">'.$msg_detail->{'ORI_DIR'}."</td></tr>
-
-            <tr><th style='text-align:left;'><strong>Nota</strong></th><td class='InfsalesTd'>".$msg_detail->{'ORI_NOTA'}."</td></tr>
-
-            <tr><th style='text-align:left;'><strong>Estado</strong></th><td class='InfsalesTd' ".$style." >".$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</td></tr>';
-
-  }
-
-  echo "</body></table></div></fieldset>";
 
   echo '<fieldset>
 
@@ -737,6 +669,103 @@ if($STATUS_GEN!=5){
 
 //LOG DE PROCESO
 
+ECHO '<div class=" separador col-lg-12"></div>
+
+  <div class="col-lg-12">
+
+    <fieldset>
+
+    <legend>Registro de cambios</legend>
+
+        <table id="table_log" class="table  table-striped table-bordered " cellspacing="0" >
+
+          <thead> 
+
+            <th>Registro</th>
+
+            <th>Fecha</th>
+
+            <th>Operador</th>            
+
+          </thead>
+
+          <tbody>';
+
+$CREACION = $this->model->Query("SELECT DATE, USER FROM MSG_SOL_HEADER WHERE  NO_SOL='".$id."'");
+
+        foreach ($CREACION as $value ){
+
+        $value = json_decode($value);
+
+        echo '<tr><td>SE HA GENERADO UNA SOLICITUD DE ENVIO</td><td class="numb" >'.$value->{'DATE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER'}).'</td></tr>';
+
+        }
+
+$CONFIRMACION = $this->model->Query("SELECT DATE, USER FROM MSG_SOL_STARTED WHERE  NO_SOL='".$id."'");
+
+        foreach ($CONFIRMACION as $value ){
+
+        $value = json_decode($value);
+
+        echo '<tr><td>SOLICITUD CONFIRMADA. <strong> "EN PROCESO" </strong> </td><td class="numb" >'.$value->{'DATE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER'}).'</td></tr>';
+
+        }
+
+$DELIVERY = $this->model->Query("SELECT DATE, USER, ID_STATUS, ITEM FROM MSG_SOL_DELIVERY WHERE   NO_SOL='".$id."'
+
+                                                                                            ORDER BY DATE ASC");
+
+        foreach ($DELIVERY as $value ){
+
+        $value = json_decode($value);
+
+        echo '<tr><td>EL ITEM '.$value->{'ITEM'}.' HA CAMBIADO DE ESTADO A <strong>"'.$this->model->Query_value('MSG_SOL_STATUS','STATUS', 'WHERE ID="'.$value->{'ID_STATUS'}.'"').'" </strong>  </td><td class="numb" >'.$value->{'DATE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER'}).'</td></tr>';
+
+        } 
+
+if ($STATUS_GEN != 5) {
+
+  $CANCELED = $this->model->Query("SELECT ITEMID, PRODUCT, desc_closed, LAST_CHANGE, USER_CLOSED FROM MSG_SOL_DETAIL WHERE   NO_SOL='".$id."' and STATUS = 4  ORDER BY LAST_CHANGE ASC");
+
+        foreach ($CANCELED as $value ){
+
+        $value = json_decode($value);
+
+        echo '<tr><td>EL ITEM: '.$value->{'ITEMID'}.' '.$value->{'PRODUCT'}.' HA SIDO <strong>CANCELADO</strong> POR: '.$value->{'desc_closed'}.'</td><td class="numb" >'.$value->{'LAST_CHANGE'}.'</td><td>'.$this->model->Get_User_Name($value->{'USER_CLOSED'}).'</td></tr>';
+
+        }
+
+      }
+
+if($STATUS_GEN==4){
+
+  $FIN =  $this->model->Query("SELECT DATE FROM MSG_SOL_DELIVERY WHERE   NO_SOL='".$id."' ORDER BY DATE DESC limit 1");
+
+   foreach ($FIN as $value ){
+
+     $value = json_decode($value);
+
+     echo '<tr><td><strong>PROCESO FINALIZADO</strong></td><td class="numb" >'.$value->{'DATE'}.'</td><td>SISTEMA ACIWEB</td></tr>';
+
+   }
+
+}
+
+if($STATUS_GEN==5){
+
+ $CERRADO = $this->model->Query_value('MSG_SOL_HEADER','LAST_CHANGE',"WHERE NO_SOL='".$id."'");
+
+ $MOTIVO  = $this->model->Query_value('MSG_SOL_HEADER','DESC_CLOSED',"WHERE NO_SOL='".$id."'");
+
+ $USER    = $this->model->Query_value('MSG_SOL_HEADER','USER_CLOSED',"WHERE NO_SOL='".$id."'");
+
+ echo '<tr><td>LA SOLICITUD HA SIDO CANCELADA POR: '. $MOTIVO.'</td><td class="numb" >'.$CERRADO.'</td><td>'.$this->model->Get_User_Name( $USER ).'</td></tr>';
+
+}
+
+ECHO   '</tbody>
+
+        </table></fieldset></div>';
 
 //MODA PARA CIERRE FORZOSO DE LA SOLICITUD
 
