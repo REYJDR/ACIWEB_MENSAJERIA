@@ -959,6 +959,49 @@ console.log(datos);
 
 }
 
+
+//confirma y asigna solicitu a repartidor
+
+function set_sol(id_sol){
+
+$('#ERROR').html('');
+
+var asig = $('#msg_sol_asing').val();
+
+if(asig==''){
+
+ MSG_ERROR('Se debe asignar a un repartidor para confirmar esta solicitud',0);
+ return;
+}else{
+
+var datos= "url=bridge_query/set_sol_started/"+id_sol+"/"+asig;
+
+  $.ajax({
+      type: "GET",
+      url: link,
+      data: datos,
+      success: function(res){
+
+        console.log(res);
+        location.reload(true);  
+
+        }
+   });
+
+}
+
+
+
+}
+
+
+
+
+
+
+}
+
+
 //Cancela toda la solicitud.
 
 function cancel_sol(id_sol){
@@ -982,6 +1025,8 @@ console.log(datos);
    });
 
 }
+
+
 
 //cancela un item de una solicitud
 

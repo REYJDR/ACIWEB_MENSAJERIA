@@ -781,7 +781,7 @@ if($STATUS_GEN!=5){
 
             </a>
           </div>';
-//href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'" 
+
 
 
     }
@@ -968,6 +968,7 @@ $MODAL = '
       <div class="col-lg-12 modal-body">
 
       <!--ini Modal  body-->  
+      <lable>Repartidor</lable>
          <select id="msg_sol_asing" name="msg_sol_asing">
           '.$listRepar.'
          </select>
@@ -977,7 +978,7 @@ $MODAL = '
 
       <div class="modal-footer">
 
-        <button type="button" onclick="javascript:cancel_sol('.$id.');" data-dismiss="modal" class="btn btn-primary" >Aceptar</button>
+        <button type="button" onclick="javascript:set_sol('.$id.');" data-dismiss="modal" class="btn btn-primary" >Aceptar</button>
 
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 
@@ -1351,7 +1352,7 @@ ECHO "1";
 
 //SET CONFIRMACION DE ENVIO PARA INICIAR EL PROCESO
 
-public function set_sol_started($id){
+public function set_sol_started($id,$id_repar){
 
 $this->SESSION();
 
@@ -1363,7 +1364,7 @@ $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL =
 
   if(!$VALID){
 
-       $value_to_set  = array( 
+    $value_to_set  = array( 
 
         'NO_SOL' => $id,   
 
@@ -1371,7 +1372,9 @@ $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL =
 
         );
 
-      $res = $this->model->insert('MSG_SOL_STARTED',$value_to_set);
+    $res = $this->model->insert('MSG_SOL_STARTED',$value_to_set);
+
+    $asig = $this->model->Query('UPDATE MSG_SOL_HEADER SET REP_ASIG="'.$id_repar.'" where NO_SOL ="'.$id.'"');
 
     echo '<script>  alert("Se confirma correctamente  la solicitud No. '.$id.'");  
 
@@ -1528,6 +1531,7 @@ $values  = array( 'STATUS' => 4 ,
 $clause = "NO_SOL = '".$id_sol."' and ITEMID = '".$id_item."';";
 
 $this->model->update('MSG_SOL_DETAIL',$values,$clause);
+
 
 }
 
