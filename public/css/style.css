@@ -252,6 +252,7 @@ text-align: right;
 }
 
 fieldset {
+
   border-radius: 6px;
   border:1px solid #c0c0c0
   margin: 0px;
@@ -260,7 +261,7 @@ fieldset {
   max-width: 100%;
   
   overflow-x: scroll;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 
 }
 
