@@ -219,6 +219,7 @@ table {
 
  border: 1px solid #ddd !important;
  white-space: nowrap;
+ table-layout:fixed;
 
 }
 

@@ -517,7 +517,7 @@ public function get_msg_info($id){
 
   echo     "<tr>
               <td width='20%' style='text-align:left;'><strong>No. Guía</strong></td>
-              <td width='80%' class='rowtable_req InfsalesTd'>".$msg_detail->{'NO_SOL'}."</td>
+              <td width='80%' class='rowtable_req InfsalesTd order'>".$msg_detail->{'NO_SOL'}."</td>
             </tr>
 
             <tr>
