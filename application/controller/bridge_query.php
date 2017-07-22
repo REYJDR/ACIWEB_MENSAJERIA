@@ -443,7 +443,7 @@ public function get_msg_info($id){
 
   <fieldset>
 
-  <div class="col-lg-6" >
+
 
   <legend>Detalle de envio</legend>
 
@@ -526,7 +526,7 @@ public function get_msg_info($id){
 
   }
 
-  echo "</div></fieldset>";
+  echo "</fieldset>";
 
   echo '<fieldset>
 
