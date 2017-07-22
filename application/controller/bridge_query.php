@@ -400,7 +400,26 @@ public function get_msg_info($id){
 
   echo '<script>
 
- 
+    var table = $("#table_info").dataTable({
+
+        bSort: false,
+
+        select: false,
+
+        scrollY: "800px",
+
+        scrollX: "100%",
+
+        scrollCollapse: true,
+
+        responsive: false,
+
+        searching: false,
+
+        paging:    false,
+
+        info:      false });
+
    var table = $("#table_mov").dataTable({
 
         bSort: false,
@@ -408,6 +427,8 @@ public function get_msg_info($id){
         select: false,
 
         scrollY: "800px",
+
+        scrollX: "100%",
 
         scrollCollapse: true,
 
@@ -449,7 +470,7 @@ public function get_msg_info($id){
 
   <legend>Detalle de envio</legend>
 
-  <table  width="100%" class="table table-striped table-bordered " cellspacing="0"  ><tbody>';
+  <table  id="table_info" width="100%" class="table table-striped table-bordered" cellspacing="0"  ><tbody>';
 
   foreach ($msg_detail as $datos) {
 
