@@ -425,6 +425,8 @@ public function get_msg_info($id){
 
         select: false,
 
+        scrollX: "100%",
+
         scrollY: "800px",
 
         scrollCollapse: true,
