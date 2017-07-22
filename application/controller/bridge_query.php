@@ -678,7 +678,7 @@ echo '<div class="separador col-lg-12"></div>
 
 <div class="col-lg-12">
 
-<div style="float:right;" class="col-lg-2">
+<div  class="col-lg-4">
   <a href="'.URL.'index.php?url=ges_mensajeria/msg_print/'.$id.'"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
      <img  class="icon" src="img/Printer.png" />
@@ -698,12 +698,12 @@ if($STATUS_GEN!=5){
 
        if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
-    echo '<div style="float:right;" class="col-lg-2">
+    echo '<div  class="col-lg-4">
             <a title="CANCELAR SOLICITUD" data-toggle="modal" data-target="#GenModal" href="javascript:void(0)"  class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
               <img  class="icon" src="img/Stop.png" />
 
-              <span>CANCELAR SOLICITUD</span>
+              <span>CANCELAR</span>
 
             </a>
           </div>';
@@ -716,7 +716,7 @@ if($STATUS_GEN!=5){
 
       if($this->model->active_user_role=='user_admin' or $this->model->active_user_role=='admin' ){ 
 
-    echo '<div style="float:right;" class="col-lg-2">
+    echo '<div  class="col-lg-4">
             <a href="'.URL.'index.php?url=bridge_query/set_sol_started/'.$id.'"   class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right btn-single text-left">
 
                <img  class="icon" src="img/Button Check.png" />
