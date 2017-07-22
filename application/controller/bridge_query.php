@@ -587,7 +587,9 @@ public function get_msg_info($id){
 
         <th width="5%" class="text-center">Estado</th> ';
 
- if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
+      if($this->model->active_user_role == 'admin' or 
+         $this->model->active_user_role == 'user_admin' or 
+         $this->model->active_user_role == 'repar'){
 
     echo '<th width="10%" class="text-center">Cambiar estado</th>
 
