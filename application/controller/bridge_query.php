@@ -195,6 +195,7 @@ table.yadcf(
 
     <tbody>';
 
+ECHO $clause;
 $table.= $this->get_msg_sol_br($clause);
 
 $table.= '</tbody></table>';
