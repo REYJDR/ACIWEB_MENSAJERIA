@@ -202,7 +202,7 @@ self.location="'.URL.'index.php?url=home/edit_account/'.$id.'";
 <?php 
 if($this->model->active_user_role='user_admin' || $this->model->active_user_role='admin'){
 
-  if($role != 'user'  ){
+  if($role != 'user' OR  $role != 'repar'){
 
 ?>
 

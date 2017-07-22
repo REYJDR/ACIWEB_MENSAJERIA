@@ -631,8 +631,9 @@ public function get_msg_info($id){
 
               <td>'.$delivered.'  '.$this->model->Query_value('MSG_SOL_STATUS','STATUS', 'WHERE ID="'.$msg_items->{'STATUS'}.'"').'</td>';
 
-      if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
-
+      if($this->model->active_user_role == 'admin' or 
+         $this->model->active_user_role == 'user_admin' or 
+         $this->model->active_user_role == 'repar'){
          echo '<td>';
 
           if($STATUS_GEN!=5){
@@ -671,8 +672,10 @@ public function get_msg_info($id){
 
         }
 
-        if($this->model->active_user_role == 'admin' or $this->model->active_user_role == 'user_admin' ){
-
+        
+      if($this->model->active_user_role == 'admin' or 
+         $this->model->active_user_role == 'user_admin' or 
+         $this->model->active_user_role == 'repar'){
         echo '<td>';
 
           if($STATUS_GEN!=5){
