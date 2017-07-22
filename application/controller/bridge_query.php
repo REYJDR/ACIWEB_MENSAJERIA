@@ -545,7 +545,7 @@ public function get_msg_info($id){
 
         <th width="10%" class="text-center">Datos de destinatario</th>
 
-        <th width="30%" class="text-center">Nota</th>
+        <th width="25%" class="text-center">Nota</th>
 
         <th width="5%" class="text-center">Estado</th> ';
 
