@@ -468,12 +468,7 @@ public function get_msg_info($id){
 
   <div class="col-lg-6" >
 
-  <legend>Detalle de envio</legend>
-
-  <table  id="table_info" width="80%" class="table table-striped table-bordered" cellspacing="0"  >
-
-  <thead><th></th><th></th></thead>
-  <tbody>';
+  <legend>Detalle de envio</legend>';
 
   foreach ($msg_detail as $datos) {
 
@@ -515,40 +510,34 @@ public function get_msg_info($id){
 
   }
 
-  echo     "<tr>
-              <td width='20%' style='text-align:left;'><strong>No. Guía</strong></td>
-              <td width='80%' class='rowtable_req InfsalesTd order'>".$msg_detail->{'NO_SOL'}."</td>
-            </tr>
+  echo     '
 
-            <tr>
-              <td width='20%' style='text-align:left;'><strong>Fecha</strong></td>
-              <td width='80%' class='rowtable_req InfsalesTd'>".$msg_detail->{'DATE'}."</td>
-            </tr>
-            <tr>
-              <td width='20%' style='text-align:left;'><strong>Cliente</strong></td>
-              <td width='80%' class='rowtable_req InfsalesTd'>".$msg_detail->{'ORI_NAME'}."</td>
-            </tr>
-            <tr>
-              <td style='text-align:left;'><strong>Telf.</strong></td>
-              <td width='80%' class='rowtable_req InfsalesTd'>".$msg_detail->{'ORI_TELF'}."</td>
-            </tr>
-            <tr>
-              <td width='20%' style='text-align:left;'><strong>E-mail</strong></td>
-              <td width='80%' class='rowtable_req InfsalesTd'>".$msg_detail->{'ORI_MAIL'}.'</td>
-            </tr>
-            <tr>
-               <td width="20%" style="text-align:left;" ><strong>Dirección de retiro</strong></td>
-               <td width="80%" class="rowtable_req InfsalesTd">'.$msg_detail->{'ORI_DIR'}."</td>
-            </tr>
-            <tr>
-               <td width='20%' style='text-align:left;'><strong>Nota</strong></td>
-               <td width='80%' class='rowtable_req InfsalesTd'>".$msg_detail->{'ORI_NOTA'}."</td>
-            </tr>
-            <tr>
-               <td width='20%' style='text-align:left;'><strong>Estado</strong></td>
-               <td width='80%' class='rowtable_req InfsalesTd' ".$style." >".$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</td>
-            </tr>
-            </tbody></table>';
+<div class="col-12-lg">
+  <div class="col-4-lg"><strong>No. Guía</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'NO_SOL'}.'</div>
+
+  <div class="col-4-lg"><strong>Fecha</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'DATE'}.'</div>
+
+  <div class="col-4-lg"><strong>Cliente</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'ORI_NAME'}.'</div>
+
+  <div class="col-4-lg"><strong>Telf.</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'ORI_TELF'}.'</div>
+
+  <div class="col-4-lg"><strong>E-mail</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'ORI_MAIL'}.'</div>
+
+  <div class="col-4-lg"><strong>Dirección de retiro</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'ORI_DIR'}.'</div>
+
+  <div class="col-4-lg"><strong>Nota</strong></div>
+  <div class="col-8-lg">'.$msg_detail->{'ORI_NOTA'}.'</div>
+
+  <div class="col-4-lg"><strong>Estado</strong></div>
+  <div class="col-8-lg" '.$style.' >'.$this->model->Query_value('MSG_SOL_GEN_STATUS','STATUS', 'WHERE ID="'.$STATUS_GEN.'"').'</div>
+</div>';
+
 
   }
 
