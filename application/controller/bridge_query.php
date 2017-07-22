@@ -898,6 +898,8 @@ ECHO   '</tbody>
 
 $id = "'".$id."'";
 
+$listRepar = $this->ReparList();
+
 $MODAL = '
 
 <!-- Modal -->
@@ -967,7 +969,7 @@ $MODAL = '
 
       <!--ini Modal  body-->  
          <select id="msg_sol_asing" name="msg_sol_asing">
-          $this->ReparList();
+          '.$listRepar.'
          </select>
       <!--fin Modal  body-->
 
