@@ -1585,7 +1585,7 @@ foreach ($repar as $value) {
     $list .='<option value="'.$value->{'id'}.'" >'.$value->{'name'}.' '.$value->{'lastname'}.'</option>';
   }
   
-return  $list;
+echo  $list;
 
 }
 
