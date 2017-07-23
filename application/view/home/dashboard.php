@@ -226,8 +226,9 @@ echo "<pre  id='code' class='prettyprint linenums'>
     <pre  id='code4' class='prettyprint linenums'>
        // Use Morris.Bar
         Morris.Donut({
-          element: 'donut-example',
-          data:  [ ".$FINALI."]});
+          element: 'graph4',
+          data:  [ ".$FINALI."]
+        });
     </pre>";
 
 
