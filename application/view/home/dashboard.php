@@ -152,7 +152,7 @@ $(window).load(function(){
              
       </div>
 
-      <div class="graphcont  col-lg-6">
+ <!--     <div class="graphcont  col-lg-6">
       <fieldset>
        <legend>Sol. Finalizadas por repartidor</legend>
         
@@ -160,7 +160,7 @@ $(window).load(function(){
 
       </fieldset>
              
-      </div>
+      </div> -->
 
     <?php } ?>
  
@@ -190,7 +190,7 @@ $USERS = $this->model->get_user_to_graph();
 
 $ASIGN = $this->model->get_asign_to_graph();
 
-$FINALI= $this->model->get_finali_to_graph();
+$FINALI = $this->model->get_finali_to_graph();
 
 echo "<pre  id='code' class='prettyprint linenums'>
        // Use Morris.Bar
