@@ -422,17 +422,16 @@ public function set_login_parameters(){
 public function get_user_to_graph(){
 $table = '';
 
-$Genouser =$this->Query_value('SAX_USER','COUNT(*)','where ONOFF ="1" and role="user"');
+    $Genouser =$this->Query_value('SAX_USER','COUNT(*)','where ONOFF ="1" and role="user"');
+    $table .=  "{x: 'Clientes' , z: '0'  , y: '".$Genouser."' },";
 
 
-$table .=  "{x: 'Clientes' , z: '0'  , y: '".$Genouser."' },";
+    $Geadmin =$this->Query_value('SAX_USER','COUNT(*)','where ONOFF ="1" and role="user_admin"');
+    $table .=  "{x: 'Usuarios del sistema' , z: '0'  , y: '".$Geadmin."' },";
 
-
-$Geadmin =$this->Query_value('SAX_USER','COUNT(*)','where ONOFF ="1" and role="user_admin"');
-
-$table .=  "{x: 'Usuarios del sistema' , z: '0'  , y: '".$Geadmin."' },";
 return $table;
 }
+
 
 public function get_asign_to_graph(){
 
@@ -460,14 +459,13 @@ public function get_asign_to_graph(){
 
     }
 
-
 return $table;
 }
 
 
-public function get_finali_to_graph(){
+ /*public function get_finali_to_graph(){
     
-  /*  $table = '';
+   $table = '';
 
     $SolAsingned = $this->Query('SELECT 
                                  NO_SOL,
@@ -492,8 +490,8 @@ public function get_finali_to_graph(){
     }
 
 
-return $table;*/
-}
+return $table;
+}*/
 
 public function get_sol_to_graph(){
 
