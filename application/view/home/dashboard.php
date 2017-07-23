@@ -250,22 +250,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
       });
     </pre>
 
-    <pre  id='code4' class='prettyprint linenums'>
-       // Use Morris.Bar
-        Morris.Bar({
-          element: 'graph4',
-          axes: true,
-          data: [ ".$FINALI."],
-          xkey: 'x',
-          ykeys: ['y'],
-          labels: ['Sol. asignadas y finalizadas']
-      }).on('click', function(i, row){ 
 
-       table.fnFilter(row.x, 3);
-           
-
-      });
-    </pre>
 
 
 
