@@ -466,6 +466,38 @@ public function get_asign_to_graph(){
 return $table;
 }
 
+public function get_finali_to_graph(){
+
+    $table = '';
+
+    $SolAsingned = $this->Query('SELECT 
+                                 REP_ASIG,
+                                 NO_SOL
+                                 FROM MSG_SOL_HEADER 
+                                 WHERE REP_ASIG IS NOT NULL
+                                 GROUP BY REP_ASIG, NO_SOL');
+
+    foreach($SolAsingned as $value){
+
+        $value = json_decode($value);
+
+        $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
+        
+        if($STATUS_GEN=='3'){ 
+            $CUENTA += 1;
+
+            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$CUENTA."' },";
+
+         }
+
+          
+
+        }
+
+    
+
+return $table;
+}
 
 
 
