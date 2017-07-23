@@ -435,7 +435,7 @@ return $table;
 }
 
 public function get_asign_to_graph(){
-    
+
     $table = '';
 
     $SolAsingned = $this->Query('SELECT 
@@ -453,6 +453,37 @@ public function get_asign_to_graph(){
         $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
 
         if($STATUS_GEN=='2'){
+
+         $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$value->{'CUENTA'}."' },";
+
+        }
+
+    }
+
+
+return $table;
+}
+
+
+public function get_finali_to_graph(){
+    
+    $table = '';
+
+    $SolAsingned = $this->Query('SELECT 
+                                 NO_SOL,
+                                 COUNT(NO_SOL) AS CUENTA,
+                                 REP_ASIG 
+                                 FROM MSG_SOL_HEADER 
+                                 WHERE REP_ASIG IS NOT NULL
+                                 GROUP BY REP_ASIG');
+
+    foreach($SolAsingned as $value){
+
+        $value = json_decode($value);
+
+        $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
+
+        if($STATUS_GEN=='4'){
 
          $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$value->{'CUENTA'}."' },";
 

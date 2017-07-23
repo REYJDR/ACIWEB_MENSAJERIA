@@ -180,6 +180,8 @@ $USERS = $this->model->get_user_to_graph();
 
 $ASIGN = $this->model->get_asign_to_graph();
 
+$FINALI= $this->model->get_finali_to_graph();
+
 echo "<pre  id='code' class='prettyprint linenums'>
        // Use Morris.Bar
         Morris.Bar({
@@ -230,6 +232,23 @@ echo "<pre  id='code' class='prettyprint linenums'>
           xkey: 'x',
           ykeys: ['y'],
           labels: ['Sol. en transito asignadas']
+      }).on('click', function(i, row){ 
+
+       table.fnFilter(row.x, 3);
+           
+
+      });
+    </pre>
+
+       <pre  id='code4' class='prettyprint linenums'>
+       // Use Morris.Bar
+        Morris.Bar({
+          element: 'graph4',
+          axes: true,
+          data: [ ".$FINALI."],
+          xkey: 'x',
+          ykeys: ['y'],
+          labels: ['Sol. asignadas y finalizadas']
       }).on('click', function(i, row){ 
 
        table.fnFilter(row.x, 3);
