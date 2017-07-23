@@ -451,11 +451,11 @@ public function get_asign_to_graph(){
 
         $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
 
-        if($STATUS_GEN=='2'){
+        //if($STATUS_GEN=='2'){
 
           $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$value->{'CUENTA'}."' },";
 
-        }
+        //}
 
     }
 
