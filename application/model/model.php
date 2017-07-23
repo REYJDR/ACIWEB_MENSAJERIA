@@ -483,7 +483,8 @@ public function get_finali_to_graph(){
 
         $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
         
-        if($STATUS_GEN=='3'){ 
+        if($STATUS_GEN=='4'){ 
+
             $CUENTA += 1;
 
             $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$CUENTA."' },";
