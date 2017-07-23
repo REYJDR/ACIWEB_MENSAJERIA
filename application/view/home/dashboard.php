@@ -9,7 +9,7 @@ $(window).load(function(){
 
   set_brief_report();
   
-  var text = $('#code').text()+$('#code2').text()+$('#code3').text();
+  var text = $('#code').text()+$('#code2').text()+$('#code3').text()+$('#code4').text();
  
   eval(text);
   prettyPrint();
@@ -75,35 +75,6 @@ $(window).load(function(){
   </tr>
 </table>
 
-<!-- 
-
- 
-
-     <div class='col-lg-4'>
-     <label class='col-md-12' >Registros entre</label>
-     <input class='numb' type="date" id="date1" name="name1"  value="" /> -
-     <input class='numb' type="date" id="date2" name="name2"  value=""/>
-     </div>
-
-    
-    <div class='col-lg-4'>
-    <label class='col-md-12' >Sortear</label>
-     <select   id="sort" required>
-           
-           <option  value="ASC">Ascendente (A-Z)</option>
-           <option  value="DESC" selected>Descendente (Z-A)</option>
-         
-    </select>
-    </div>
-
-
-    
-    <div class='col-lg-4'>
-     <label class='col-lg-12' >Limitar</label>
-     <input class='numb ' type="number" min="1" max="10000" id="limit" value="100" required/>
-     <p class="help-block">Maximo de 10000 registros</p>
-    </div>
- -->
   <div class="col-xs-6">
   <br>
    <input type="submit" onclick="Filtrar();" class="btn btn-primary  btn-sm  btn-icon icon-right" value="Consultar" />
@@ -214,8 +185,6 @@ echo "<pre  id='code' class='prettyprint linenums'>
 
        table.fnFilter(row.x, 5);
 
-           
-
       });
     </pre>
 
@@ -240,7 +209,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
         Morris.Bar({
           element: 'graph3',
           axes: true,
-          data: [ ".$FINALI."],
+          data: [ ".$ASIGN."],
           xkey: 'x',
           ykeys: ['y'],
           labels: ['Sol. en transito asignadas']
@@ -253,7 +222,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
       });
     </pre>
 
-       <pre  id='code4' class='prettyprint linenums'>
+    <pre  id='code4' class='prettyprint linenums'>
        // Use Morris.Bar
         Morris.Bar({
           element: 'graph4',
