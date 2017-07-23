@@ -229,10 +229,10 @@ echo "<pre  id='code' class='prettyprint linenums'>
           data: [ ".$ASIGN."],
           xkey: 'x',
           ykeys: ['y'],
-          labels: ['En Transito']
+          labels: ['Sol. en transito asignadas']
       }).on('click', function(i, row){ 
 
-       table.fnFilter(row.x, 5);
+       table.fnFilter(row.x, 3);
            
 
       });
