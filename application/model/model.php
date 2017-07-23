@@ -491,7 +491,7 @@ public function get_finali_to_graph(){
 
             $CUENTA += 1;
 
-            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: 'FINALIZADO'  , y: '".$CUENTA."' },";
+            $table .=  "{lable: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , value: '".$CUENTA."' },";
 
          }
 
