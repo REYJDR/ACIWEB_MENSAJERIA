@@ -198,7 +198,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
             }
       }).on('click', function(i, row){ 
 
-table.fnFilter(row.x, 4);
+       table.fnFilter(row.x, 4);
 
            
 
@@ -232,8 +232,7 @@ table.fnFilter(row.x, 4);
           labels: ['En Transito']
       }).on('click', function(i, row){ 
 
-table.fnFilter(row.x, 4);
-
+       table.fnFilter(row.x, 5);
            
 
       });
