@@ -263,7 +263,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
           labels: ['Sol. finalizadas por repartidor']
       }).on('click', function(i, row){ 
 
-       table.fnFilter(row.x, 3);
+       table.fnFilter(row.z, 5);
            
 
       });

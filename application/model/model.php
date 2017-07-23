@@ -449,11 +449,13 @@ public function get_asign_to_graph(){
         $value = json_decode($value);
 
         $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
-        
+
+            
         if($STATUS_GEN=='2'){ 
+            
             $CUENTA += 1;
 
-            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$CUENTA."' },";
+            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: 'EN PROCESO'  , y: '".$CUENTA."' },";
 
          }
 
