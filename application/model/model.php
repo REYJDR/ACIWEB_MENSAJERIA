@@ -429,6 +429,8 @@ $table = '';
     $Geadmin =$this->Query_value('SAX_USER','COUNT(*)','where ONOFF ="1" and role="user_admin"');
     $table .=  "{x: 'Usuarios del sistema' , z: '0'  , y: '".$Geadmin."' },";
 
+    $repar =$this->Query_value('SAX_USER','COUNT(*)','where ONOFF ="1" and role="repar"');
+    $table .=  "{x: 'Repartidores' , z: '0'  , y: '".$repar."' },";
 return $table;
 }
 
