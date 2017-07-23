@@ -178,7 +178,7 @@ $SOL  =  $this->model->get_sol_to_graph();
 
 $USERS = $this->model->get_user_to_graph();
 
-$ASIGN = $this->model->get_user_to_graph();
+$ASIGN = $this->model->get_asign_to_graph();
 
 echo "<pre  id='code' class='prettyprint linenums'>
        // Use Morris.Bar
