@@ -1539,11 +1539,11 @@ $message_to_send ='<html>
 </head>
 
 <body>
-<p>Se ha asignado a su perfil la solicitud de envio No. '.$id.'</p>
+<p>Se ha asignado a su perfil la solicitud de envio <strong>No.'.$id.'</strong></p>
 
 '.$message.'
 
-
+<a href="'.URL.'index.php?url=ges_mensajeria/msg_entrega/'.$id.'" type="button" id="INICIAR" >IR AL SISTEMA</a>
 </body>
 
 </html>';
@@ -1557,6 +1557,7 @@ $mail->AddAddress($RepAsigMail);
      die('<script>MSG_ERROR("El correo de notificacion no puedo ser enviado. Error: ' . $mail->ErrorInfo.'",0);</script>') ;
 
   } 
+
 
 }
 
