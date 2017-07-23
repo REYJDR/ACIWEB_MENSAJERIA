@@ -144,9 +144,19 @@ $(window).load(function(){
 
       <div class="graphcont  col-lg-6">
       <fieldset>
-      <legend>Sol. Asignadas</legend>
+      <legend>Sol. Asignadas en transito</legend>
         
         <div id="graph3"></div>
+
+      </fieldset>
+             
+      </div>
+
+      <div class="graphcont  col-lg-6">
+      <fieldset>
+      <legend>Sol. Finalizadas por repartidor</legend>
+        
+        <div id="graph4"></div>
 
       </fieldset>
              
