@@ -229,14 +229,7 @@ table.fnFilter(row.x, 4);
           data: [ ".$ASIGN."],
           xkey: 'x',
           ykeys: ['y'],
-          labels: ['Solicitudes'],
-          barColors: function (row, series, type) {
-            if(row.label == 'Cancelado') return '#D8D8D8';
-            else if(row.label == 'Finalizado') return '#BCF5A9';
-            else if(row.label == 'Transito')  return '#F2F5A9';
-            else if(row.label == 'Proceso')   return '#F7BE81';
-            else if(row.label == 'Pendiente') return '#F5A9A9';
-            }
+          labels: ['En Transito']
       }).on('click', function(i, row){ 
 
 table.fnFilter(row.x, 4);
