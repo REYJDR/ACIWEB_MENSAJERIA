@@ -242,6 +242,13 @@ table.yadcf([
 	     		$style='style="background-color:#045FB4; color:white;"';
 	     		break;
 
+	     	case 'repar':
+
+	     		$user_role = 'Repartidor';
+	     		$boton_editar = '<a  href="'.URL.'index.php?url=home/edit_account/'.$user->{'id'}.'" >'.strtoupper($user->{'name'}).' '.strtoupper($user->{'lastname'}).'</a>';
+	     		$style='style="background-color:#FACC2E; "';
+	     		break;
+
 	     
 
 	     }
