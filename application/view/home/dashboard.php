@@ -200,7 +200,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
           barColors: function (row, series, type) {
             if(row.label == 'Clientes') return '#045FB4';
             else if(row.label == 'Usuarios del sistema') return '#04B4AE';
-            else if(row.label == 'Repartidores') return '##FACC2E';
+            else if(row.label == 'Repartidores') return '#FACC2E';
             }
       });
     </pre>
