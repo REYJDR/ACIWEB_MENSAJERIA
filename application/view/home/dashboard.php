@@ -232,9 +232,6 @@ echo "<pre  id='code' class='prettyprint linenums'>
     </pre>";
 
 
-
-});
-
   }
 ?>
 
