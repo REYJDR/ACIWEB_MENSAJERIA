@@ -491,8 +491,8 @@ public function get_finali_to_graph(){
 
     }
 
-*/
-return $table;
+
+return $table;*/
 }
 
 public function get_sol_to_graph(){
