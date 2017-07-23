@@ -117,14 +117,14 @@ $(window).load(function(){
 
 <div class="col-lg-9"> 
 <fieldset>
-  <legend><img class='icon' src="img/System Activity Monitor.png" />Panel de control</legend>
+  <legend><img class='icon' src="img/System Activity Monitor.png" />Panel </legend>
     
     <?php  if($this->model->active_user_role == 'admin' or 
               $this->model->active_user_role == 'user_admin' ){ ?> 
 
      <div class="graphcont  col-lg-6">
       <fieldset>
-      <legend>Solicitudes</legend>
+      <legend>Registro de Solicitudes</legend>
         
         <div id="graph"></div>
 
@@ -142,6 +142,16 @@ $(window).load(function(){
              
       </div>
 
+      <div class="graphcont  col-lg-6">
+      <fieldset>
+      <legend>Sol. Asignadas</legend>
+        
+        <div id="graph3"></div>
+
+      </fieldset>
+             
+      </div>
+
     <?php } ?>
  
 <div class="separador col-lg-12"></div>
@@ -149,7 +159,7 @@ $(window).load(function(){
 
 <div class="col-lg-12">
   <fieldset>
-  <legend>Solicitudes de envio</legend> 
+  <legend>Registro de Solicitudes</legend> 
      
      <div id='BriefRep' ></div>
 
@@ -167,6 +177,8 @@ if($this->model->active_user_role == 'admin' or
 $SOL  =  $this->model->get_sol_to_graph();
 
 $USERS = $this->model->get_user_to_graph();
+
+$ASIGN = $this->model->get_user_to_graph();
 
 echo "<pre  id='code' class='prettyprint linenums'>
        // Use Morris.Bar
@@ -207,7 +219,36 @@ table.fnFilter(row.x, 4);
             else if(row.label == 'Usuarios del sistema') return '#04B4AE';
             }
       });
-    </pre>";
+    </pre>
+
+   <pre  id='code3' class='prettyprint linenums'>
+       // Use Morris.Bar
+        Morris.Bar({
+          element: 'graph3',
+          axes: true,
+          data: [ ".$ASIGN."],
+          xkey: 'x',
+          ykeys: ['y'],
+          labels: ['Solicitudes'],
+          barColors: function (row, series, type) {
+            if(row.label == 'Cancelado') return '#D8D8D8';
+            else if(row.label == 'Finalizado') return '#BCF5A9';
+            else if(row.label == 'Transito')  return '#F2F5A9';
+            else if(row.label == 'Proceso')   return '#F7BE81';
+            else if(row.label == 'Pendiente') return '#F5A9A9';
+            }
+      }).on('click', function(i, row){ 
+
+table.fnFilter(row.x, 4);
+
+           
+
+      });
+    </pre>
+
+
+
+    ";
   }
 ?>
 
