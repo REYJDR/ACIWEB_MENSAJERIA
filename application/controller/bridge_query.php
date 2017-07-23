@@ -1384,6 +1384,8 @@ $VALID   = $this->model->Query_value('MSG_SOL_STARTED','NO_SOL','WHERE  NO_SOL =
 
     $asig = $this->model->Query('UPDATE MSG_SOL_HEADER SET REP_ASIG="'.$id_repar.'" where NO_SOL ="'.$id.'"');
 
+    $this->SolAsigned($id,$id_repar);//envia notificacion a repartidos
+
     echo '<script>  alert("Se confirma correctamente  la solicitud No. '.$id.'");  
 
                    self.location="'.URL.'index.php?url=ges_mensajeria/msg_entrega/'.$id.'"; 
@@ -1483,6 +1485,87 @@ if(!$mail->send()) {
 echo $alert;
 
 }
+
+public function SolAsigned($id,$RepAsigId){
+
+require 'PHP_mailer/PHPMailerAutoload.php';
+
+$mail = new PHPMailer;
+
+$mail->IsMAIL(); // enable SMTP
+
+$mail->IsHTML(true);
+
+$sql = "SELECT * FROM CONF_SMTP WHERE ID='1'";
+
+$smtp= $this->model->Query($sql);
+
+foreach ($smtp as $smtp_val) {
+
+  $smtp_val= json_decode($smtp_val);
+
+  $mail->Host =     $smtp_val->{'HOSTNAME'};
+
+  $mail->Port =     $smtp_val->{'PORT'};
+
+  $mail->Username = $smtp_val->{'USERNAME'};
+
+  $mail->Password = $smtp_val->{'PASSWORD'};
+
+  $mail->SMTPAuth = $smtp_val->{'Auth'};
+
+  $mail->SMTPSecure=$smtp_val->{'SMTPSecure'};
+
+  $mail->SMTPDebug= $smtp_val->{'SMTPSDebug'};
+
+  $mail->SetFrom($smtp_val->{'USERNAME'});
+
+}
+
+$mail->Subject = utf8_decode('Asignacion de solicitud No. '.$id.'');
+
+$RepAsigMail = $this->model->Query_value('SAX_USER','email','WHERE id="'.$RepAsigId.'"');
+
+$message     = $this->model->get_sol_to_mailing($id);
+
+$message_to_send ='<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>'.utf8_decode('Asignacion de solicitud No. '.$id.'').'</title>
+
+</head>
+
+<body>
+<p>Se ha asignado a su perfil la solicitud de envio No. '.$id.'</p>
+
+'.$message.'
+
+
+</body>
+
+</html>';
+
+$mail->Body = $message_to_send;
+
+$mail->AddAddress($RepAsigMail);
+
+  if(!$mail->send()) {
+
+     die('<script>MSG_ERROR("El correo de notificacion no puedo ser enviado. Error: ' . $mail->ErrorInfo.'",0);</script>') ;
+
+  } 
+
+}
+
+
+
+
+
+
+
 
 public function activate_user($mail){
 
