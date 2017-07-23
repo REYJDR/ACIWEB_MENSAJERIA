@@ -154,7 +154,7 @@ $(window).load(function(){
 
       <div class="graphcont  col-lg-6">
       <fieldset>
-      <legend>Sol. Finalizadas por repartidor</legend>
+       <legend>Sol. Finalizadas por repartidor</legend>
         
         <div id="graph4"></div>
 
@@ -250,7 +250,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
       });
     </pre>
 
-       <pre  id='code4' class='prettyprint linenums'>
+    <pre  id='code4' class='prettyprint linenums'>
        // Use Morris.Bar
         Morris.Bar({
           element: 'graph4',

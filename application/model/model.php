@@ -465,7 +465,7 @@ return $table;
 }
 
 
-public function get_finali_to_graph(){
+/*public function get_finali_to_graph(){
     
     $table = '';
 
@@ -493,7 +493,7 @@ public function get_finali_to_graph(){
 
 
 return $table;
-}
+}*/
 
 public function get_sol_to_graph(){
 
@@ -539,7 +539,7 @@ foreach ($GetOrder as $value) {
        $SOL_TRANS += 1;
       break;
     case 2:
-      $SOL_PROC += 1;//GRIS
+       $SOL_PROC += 1;//GRIS
       break; 
     case 1:
        $SOL_PEND += 1;//GRIS
