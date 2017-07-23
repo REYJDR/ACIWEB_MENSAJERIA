@@ -438,26 +438,30 @@ public function get_asign_to_graph(){
     $table = '';
 
     $SolAsingned = $this->Query('SELECT 
-                                 NO_SOL,
-                                 COUNT(NO_SOL) AS CUENTA,
-                                 REP_ASIG 
+                                 REP_ASIG,
+                                 NO_SOL
                                  FROM MSG_SOL_HEADER 
                                  WHERE REP_ASIG IS NOT NULL
-                                 GROUP BY REP_ASIG');
+                                 GROUP BY REP_ASIG, NO_SOL');
 
     foreach($SolAsingned as $value){
 
         $value = json_decode($value);
 
         $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
+        
+        if($STATUS_GEN=='2'){ 
+            $CUENTA += 1;
 
-        //if($STATUS_GEN=='2'){
+            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$value->{'CUENTA'}."' },";
 
-          $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$value->{'CUENTA'}."' },";
+         }
 
-        //}
+          
 
-    }
+        }
+
+    
 
 return $table;
 }
