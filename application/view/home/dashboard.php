@@ -246,7 +246,8 @@ echo "<pre  id='code' class='prettyprint linenums'>
           labels: ['Sol. en transito asignadas']
       }).on('click', function(i, row){ 
 
-       table.fnFilter(row.z, 5; row.x, 3);
+       table.fnFilter(row.z, 5);
+       table.fnFilter(row.x, 3);
            
 
       });
