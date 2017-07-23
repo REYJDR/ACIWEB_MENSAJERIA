@@ -240,7 +240,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
         Morris.Bar({
           element: 'graph3',
           axes: true,
-          data: [ ".$ASIGN."],
+          data: [ ".$FINALI."],
           xkey: 'x',
           ykeys: ['y'],
           labels: ['Sol. en transito asignadas']
@@ -264,7 +264,8 @@ echo "<pre  id='code' class='prettyprint linenums'>
           labels: ['Sol. finalizadas por repartidor']
       }).on('click', function(i, row){ 
 
-       table.fnFilter(row.z, 5 );
+       table.fnFilter(row.z, 5);
+       table.fnFilter(row.x, 3);
            
 
       });

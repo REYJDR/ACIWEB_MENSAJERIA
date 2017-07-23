@@ -452,7 +452,7 @@ public function get_asign_to_graph(){
 
             
         if($STATUS_GEN=='2'){ 
-            
+
             $CUENTA += 1;
 
             $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: 'EN PROCESO'  , y: '".$CUENTA."' },";
@@ -489,7 +489,7 @@ public function get_finali_to_graph(){
 
             $CUENTA += 1;
 
-            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: '0'  , y: '".$CUENTA."' },";
+            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: 'FINALIZADO'  , y: '".$CUENTA."' },";
 
          }
 
