@@ -184,7 +184,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
       }).on('click', function(i, row){ 
 
        table.fnFilter(row.x, 5);
-
+        window.scrollTo(0,document.body.scrollHeight);
       });
     </pre>
 
@@ -218,7 +218,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
 
        table.fnFilter(row.z, 5);
        table.fnFilter(row.x, 3);
-           
+      window.scrollTo(0,document.body.scrollHeight);
 
       });
     </pre>
