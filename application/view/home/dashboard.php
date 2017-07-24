@@ -219,7 +219,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
 
               var color = Math.ceil(94 * row.y / this.ymax);
 
-              return 'rgb(' + color + ', 0, 0)';
+              return 'rgb(' + color + ', 4, 124)';
             }
             else {
               return '#000';
