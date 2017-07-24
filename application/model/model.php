@@ -499,18 +499,17 @@ public function get_finali_to_graph(){
              $CUENTA[$value->{'REP_ASIG'}] += 1;
 
             
-
-         }
+        }
 
           
 
-        }
+    }
 
 
     foreach ($CUENTA as $key => $value) {
         
 
-        $table .=  "{label: '".$this->Get_User_Name($key)."' , value: '".$CUENTA."' },";
+        $table .=  "{label: '".$this->Get_User_Name($key)."' , value: '".$value."' },";
 
 
     }
