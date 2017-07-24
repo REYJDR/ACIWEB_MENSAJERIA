@@ -213,7 +213,16 @@ echo "<pre  id='code' class='prettyprint linenums'>
           data: [ ".$ASIGN."],
           xkey: 'x',
           ykeys: ['y'],
-          labels: ['Sol. en transito asignadas']
+          labels: ['Sol. en transito asignadas'],
+           barColors: function (row, series, type) {
+            if (type === 'bar') {
+              var red = Math.ceil(255 * row.y / this.ymax);
+              return 'rgb(' + red + ',0,0)';
+            }
+            else {
+              return '#000';
+            }
+          }
       }).on('click', function(i, row){ 
 
        table.fnFilter(row.z, 5);
