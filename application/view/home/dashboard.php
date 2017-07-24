@@ -238,7 +238,18 @@ echo "<pre  id='code' class='prettyprint linenums'>
        // Use Morris.Bar
         Morris.Donut({
           element: 'graph4',
-          data:  [ ".$FINALI."]
+          data:  [ ".$FINALI."],
+           barColors: function (row, series, type) {
+            if (type === 'bar') {
+
+              var color = Math.ceil(29 * row.y / this.ymax);
+
+              return 'rgb(' + color + ', 206, 9)';
+            }
+            else {
+              return '#000';
+            }
+          }
         });
     </pre>";
 
