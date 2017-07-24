@@ -496,15 +496,24 @@ public function get_finali_to_graph(){
         
         if($STATUS_GEN=='4'){ 
 
-            $CUENTA += 1;
+             $CUENTA[$value->{'REP_ASIG'}] += 1;
 
-            $table .=  "{label: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , value: '".$CUENTA."' },";
+            
 
          }
 
           
 
         }
+
+
+    foreach ($CUENTA as $key => $value) {
+        
+
+        $table .=  "{label: '".$this->Get_User_Name($key)."' , value: '".$CUENTA."' },";
+
+
+    }
 
     
 
