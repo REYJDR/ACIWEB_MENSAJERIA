@@ -217,9 +217,9 @@ echo "<pre  id='code' class='prettyprint linenums'>
            barColors: function (row, series, type) {
             if (type === 'bar') {
 
-              var color = Math.ceil(94 * row.y / this.ymax);
+              var color = Math.ceil(20 * row.y / this.ymax);
 
-              return 'rgb(' + color + ', 4, 124)';
+              return 'rgb(' + color + ', 114, 10)';
             }
             else {
               return '#000';
