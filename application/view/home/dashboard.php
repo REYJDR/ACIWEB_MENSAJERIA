@@ -243,7 +243,7 @@ echo "<pre  id='code' class='prettyprint linenums'>
         }).on('click', function(i, row){ 
 
        table.fnFilter('FINALIZADO', 5);
-       table.fnFilter(label, 3);
+       table.fnFilter(row.label, 3);
 
 
       window.scrollTo(0,document.body.scrollHeight);
