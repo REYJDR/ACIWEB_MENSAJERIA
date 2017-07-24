@@ -216,9 +216,10 @@ echo "<pre  id='code' class='prettyprint linenums'>
           labels: ['Sol. en transito asignadas'],
            barColors: function (row, series, type) {
             if (type === 'bar') {
-              var red = Math.ceil(247 * row.y / this.ymax);
-              
-              return 'rgb(' + 247 + ', 190, 129)';
+
+              var color = Math.ceil(247 * row.y / this.ymax);
+
+              return 'rgb(' + color + ', 190, 129)';
             }
             else {
               return '#000';
