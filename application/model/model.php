@@ -450,23 +450,30 @@ public function get_asign_to_graph(){
 
         $value = json_decode($value);
 
+
         $STATUS_GEN = $this->get_status_gen($value->{'NO_SOL'});
 
             
         if($STATUS_GEN=='2'){ 
 
-            $CUENTA += 1;
-
-            $table .=  "{x: '".$this->Get_User_Name($value->{'REP_ASIG'})."' , z: 'EN PROCESO'  , y: '".$CUENTA."' },";
-
+            $CUENTA[$value->{'REP_ASIG'}] += 1;
+         
          }
 
           
 
-        }
+    }
+
+    foreach ($CUENTA as $key => $value) {
+        
+
+        $table .=  "{x: '".$key."' , z: 'EN PROCESO'  , y: '".$value."' },";
+
+
+    }
 
     
-
+ 
 return $table;
 }
 
@@ -1259,7 +1266,7 @@ $table .= '
         <th width="10%" class="text-center">Producto</th>
         <th width="20%" class="text-center">Destinatario (Empresa)</th>
         <th width="20%" class="text-center">Direccion de envio</th>
-        <th width="20%" class="text-center">Datos de remitente</th>
+        <th width="20%" class="text-center">Datos de destinatario</th>
         <th width="20%" class="text-center">Nota</th>
         </tr>
         </thead><tbody>';
