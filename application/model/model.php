@@ -467,7 +467,7 @@ public function get_asign_to_graph(){
     foreach ($CUENTA as $key => $value) {
         
 
-        $table .=  "{x: '".$key."' , z: 'EN PROCESO'  , y: '".$value."' },";
+        $table .=  "{x: '".$this->get_status_gen($key)."' , z: 'EN PROCESO'  , y: '".$value."' },";
 
 
     }
