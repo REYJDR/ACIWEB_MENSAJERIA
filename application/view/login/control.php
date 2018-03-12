@@ -79,7 +79,8 @@ if(isset($_POST['flag']))
 								<a  href="<?php echo URL; ?>index.php?url=login/forgot_pass" >Recuperar Contraseña</a>
 							</div>
 							<div class="form-group col-lg-4">
-							<span id="siteseal"><script async="" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=zB3xB13v2RV55GbgMLeYTlZOfhe0M5wMGtv2IKpi6SMS8b03XF39KAqppsrq"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/es/siteseal_gd_3_h_d_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify"></span>								
+							<span id="siteseal">
+							<img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/es/siteseal_gd_3_h_d_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify"></span>								
 					        </div>
 						</div>
 
