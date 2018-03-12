@@ -75,10 +75,10 @@ if(isset($_POST['flag']))
 						 
 					    </div>
 					    <div class="col-lg-12">
-					    	<div class="form-group col-lg-8">
+					    	<div class="form-group col-lg-6">
 								<a  href="<?php echo URL; ?>index.php?url=login/forgot_pass" >Recuperar Contraseña</a>
 							</div>
-							<div class="form-group col-lg-4">
+							<div class="form-group col-lg-6">
 							<span id="siteseal">
 							<img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/es/siteseal_gd_3_h_d_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify"></span>								
 					        </div>
